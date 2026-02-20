@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BergsVelo lietoto velosipēdu veikals — rūpīgi pārbaudīti velo par godīgu cenu Ozolniekos." />
+    <meta name="keywords" content="lietoti velosipēdi, velo pārdošana, ozolnieki, bergsvelo" />
+    <title>Lietoti Velo — BERGSVELO</title>
+
+    <link rel="icon" href="images/ozo velo.png" />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+  </head>
+  <body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header scrolled" id="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+          </a>
+
+          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+
+          <ul class="nav-menu" id="nav-menu" role="list">
+            <li><a href="index.html" class="nav-link">Sākums</a></li>
+            <li><a href="workshop.html" class="nav-link">Serviss</a></li>
+            <li><a href="lietoti.html" class="nav-link active">Lietoti velo</a></li>
+            <li><a href="contacts.html" class="nav-link nav-cta">Piesakies</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ==================== PAGE HERO ==================== -->
+      <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('./images/header_bike.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+          <div class="page-hero-content reveal">
+            <span class="page-hero-eyebrow">Pārdošanā</span>
+            <h1 class="page-hero-title">
+              Lietoti<br /><span class="accent">Velosipēdi</span>
+            </h1>
+            <p class="page-hero-desc">
+              Rūpīgi pārbaudīti un sakārtoti velo par godīgu cenu.
+              Katrs velosipēds ir izgājis tehnisko pārbaudi.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== BIKES ==================== -->
+      <section class="section bikes-section">
+        <div class="container">
+
+          <div class="section-header reveal">
+            <span class="section-label" style="color:var(--clr-text-muted)">Pieejamie velo</span>
+            <h2 class="section-title" id="bikes-count-title">Velosipēdi</h2>
+          </div>
+
+          <!-- Bikes rendered by JS -->
+          <div class="bikes-grid" id="bikes-container">
+            <div class="bikes-loading">
+              <span class="bikes-loading-dot"></span>
+              <span class="bikes-loading-dot"></span>
+              <span class="bikes-loading-dot"></span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==================== CTA ==================== -->
+      <section class="section cta-section">
+        <div class="container">
+          <div class="cta-inner reveal">
+            <span class="section-label">Jautājumi?</span>
+            <h2 class="cta-title">Neatradi piemērotu velo?</h2>
+            <p class="cta-desc">
+              Pastāstiet, ko meklējat — palīdzēsim atrast vai ieteikt piemērotāko variantu.
+            </p>
+            <a href="contacts.html" class="btn btn-primary btn-lg">
+              Sazināties
+              <i class="icon ion-md-arrow-forward"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <a href="index.html" class="nav-logo footer-brand-logo">
+              <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+            </a>
+            <p class="footer-tagline">
+              Vietējais veloserviss Ozolniekos.<br />
+              Apkope ar savākšanu un piegādi.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigācija</h4>
+            <ul>
+              <li><a href="index.html">Sākums</a></li>
+              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="contacts.html">Kontakti</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Kontakti</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item"><i class="icon ion-md-pin"></i>Ozolnieki, Latvija</li>
+              <li class="footer-contact-item"><i class="icon ion-md-call"></i>+371 265 33 400</li>
+              <li class="footer-contact-item"><i class="icon ion-md-mail"></i>info@bergsvelo.lv</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
+
+<!-- ═══════════════════════════════════════════════════════════════
+  BERGSVELO — Lietoto velosipēdu konfigurācija
+
+  KĀ AKTIVIZĒT VELOSIPĒDU:
+    Nomainiet  active: false  →  active: true
+
+  KĀ ATZĪMĒT KĀ PĀRDOTU:
+    Nomainiet  sold: false   →  sold: true
+
+  FOTO PIEVIENOŠANA:
+    Ielieciet foto mapē  photos/XX/  (piemērs: photos/01/)
+    Nosaukums:  01_1.jpg, 01_2.jpg, 01_3.jpg  ...
+    Atbalstītie formāti: .jpg  .jpeg  .png  .webp
+    Foto parādīsies automātiski — HTML nav jāmaina!
+    Maksimāli 10 foto uz vienu velosipēdu.
+═══════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  /* ─────────────────────────────────────────
+     VELOSIPĒDU DATI — rediģē šeit
+  ───────────────────────────────────────── */
+  const BIKES = [
+    {
+      id: '01',
+      active: false,           // true = rāda lapā
+      sold: false,             // true = "Pārdots" uzlika
+      title: 'Trek Marlin 5',
+      year: 2021,
+      category: 'Kalnu velo',
+      condition: 'Lieliska',
+      price: 380,
+      description: 'Alumīnija rāmis ar Shimano 21 ātrumu transmisiju. Priekšdakša ar 100 mm gājienu. Mehāniskās disku bremzes. Piemērots gan bezceļiem, gan pilsētas ielām.',
+      specs: ['21 ātrumi', 'Disku bremzes', '27.5" rati']
+    },
+    {
+      id: '02',
+      active: false,
+      sold: false,
+      title: 'Giant Escape 3',
+      year: 2020,
+      category: 'Pilsētas velo',
+      condition: 'Laba',
+      price: 260,
+      description: 'Viegls alumīnija rāmis ideāli piemērots ikdienas braucieniem. Shimano 3×8 ātrumu pārnesumi, V-bremzes, komfortabls sēdeklis.',
+      specs: ['24 ātrumi', 'V-bremzes', '28" rati']
+    },
+    {
+      id: '03',
+      active: false,
+      sold: false,
+      title: 'Specialized Rockhopper',
+      year: 2019,
+      category: 'Kalnu velo',
+      condition: 'Laba',
+      price: 320,
+      description: 'Klasisks MTB ar stingru alumīnija rāmi un Shimano Altus 3×8 transmisiju. Mehāniskās disku bremzes, 29" riteņi.',
+      specs: ['24 ātrumi', 'Disku bremzes', '29" rati']
+    },
+    {
+      id: '04',
+      active: false,
+      sold: false,
+      title: 'Cube Attention',
+      year: 2022,
+      category: 'Kalnu velo',
+      condition: 'Teicama',
+      price: 520,
+      description: 'Moderns MTB hardtail ar Shimano Deore 12 ātrumu pārnesumiem un hidrauliskām disku bremzēm. Minimāla nolietojuma pazīme.',
+      specs: ['12 ātrumi', 'Hidro. bremzes', '29" rati']
+    },
+    {
+      id: '05',
+      active: false,
+      sold: false,
+      title: 'Scott Sub Cross 40',
+      year: 2021,
+      category: 'Trekinga velo',
+      condition: 'Laba',
+      price: 290,
+      description: 'Daudzpusīgs trekinga velo pilsētai un dabai. Shimano 3×8, dubļusargi un bagāžnieks iekļauti.',
+      specs: ['24 ātrumi', 'V-bremzes', 'Ar bagāžnieku']
+    },
+    {
+      id: '06',
+      active: false,
+      sold: false,
+      title: 'Cannondale Quick 5',
+      year: 2020,
+      category: 'Pilsētas velo',
+      condition: 'Vidēja',
+      price: 195,
+      description: 'Viegls un ātrs pilsētas velo. Shimano 3×7 ātrumi, alumīnija rāmis, ergonomiski rokturi.',
+      specs: ['21 ātrumi', 'V-bremzes', '28" rati']
+    },
+    {
+      id: '07',
+      active: false,
+      sold: false,
+      title: 'Merida Big.Nine 20',
+      year: 2021,
+      category: 'Kalnu velo',
+      condition: 'Lieliska',
+      price: 440,
+      description: 'Viegls 29er hardtail MTB ar Shimano Acera 3×8 transmisiju un mehāniskām disku bremzēm. Labi saglabājies.',
+      specs: ['24 ātrumi', 'Disku bremzes', '29" rati']
+    },
+    {
+      id: '08',
+      active: false,
+      sold: false,
+      title: 'Trek FX 2',
+      year: 2022,
+      category: 'Pilsētas velo',
+      condition: 'Teicama',
+      price: 480,
+      description: 'Sportiski pilsētas velo ar alumīnija rāmi, Shimano 2×8 ātrumiem un mehāniskām disku bremzēm. Gandrīz jauns stāvoklis.',
+      specs: ['16 ātrumi', 'Disku bremzes', '28" rati']
+    },
+    {
+      id: '09',
+      active: false,
+      sold: false,
+      title: 'Ghost Kato 26',
+      year: 2018,
+      category: 'Kalnu velo',
+      condition: 'Apmierinjoša',
+      price: 130,
+      description: 'Universāls risinājums pilsētai un bezceļiem. Shimano 3×7 ātrumi, V-bremzes. Labs iesācējiem.',
+      specs: ['21 ātrumi', 'V-bremzes', '26" rati']
+    },
+    {
+      id: '10',
+      active: false,
+      sold: false,
+      title: 'Cube Aim Pro',
+      year: 2020,
+      category: 'Kalnu velo',
+      condition: 'Laba',
+      price: 310,
+      description: 'Uzticams kalnu velo ar Shimano Acera 3×8 transmisiju, mehāniskām disku bremzēm un 29" riteņiem.',
+      specs: ['24 ātrumi', 'Disku bremzes', '29" rati']
+    }
+  ];
+
+  /* ─────────────────────────────────────────
+     STĀVOKĻA KRĀSA
+  ───────────────────────────────────────── */
+  const CONDITION_CLASS = {
+    'Teicama':      'cond-excellent',
+    'Lieliska':     'cond-great',
+    'Laba':         'cond-good',
+    'Vidēja':       'cond-ok',
+    'Apmierinjoša': 'cond-fair'
+  };
+
+  /* ─────────────────────────────────────────
+     AUTO ATTĒLU ATKLĀŠANA
+     Mēģina ielādēt photos/XX/XX_1.jpg, XX_2.jpg...
+     Apstājas pie pirmā trūkstošā.
+  ───────────────────────────────────────── */
+  const EXTS = ['jpg', 'jpeg', 'png', 'webp'];
+
+  function tryLoad(src) {
+    return new Promise(resolve => {
+      const img = new Image();
+      img.onload  = () => resolve(src);
+      img.onerror = () => resolve(null);
+      img.src = src;
+    });
+  }
+
+  async function findImage(basePath) {
+    for (const ext of EXTS) {
+      const result = await tryLoad(`${basePath}.${ext}`);
+      if (result) return result;
+    }
+    return null;
+  }
+
+  async function discoverImages(id) {
+    const folder = id.padStart(2, '0');
+    const imgs = [];
+    for (let i = 1; i <= 10; i++) {
+      const base = `photos/${folder}/${folder}_${i}`;
+      const src  = await findImage(base);
+      if (!src) break;
+      imgs.push(src);
+    }
+    return imgs;
+  }
+
+  /* ─────────────────────────────────────────
+     GALERIJAS LOĢIKA
+  ───────────────────────────────────────── */
+  function buildGallery(card, images) {
+    const mainImg   = card.querySelector('.bike-main-img');
+    const counter   = card.querySelector('.bike-photo-count');
+    const thumbsWrap = card.querySelector('.bike-thumbs');
+    const noPhoto   = card.querySelector('.bike-no-photo');
+
+    if (!images.length) {
+      // nav foto — rāda placeholder
+      return;
+    }
+
+    // Paslēpj placeholder, rāda attēlu
+    noPhoto.style.display = 'none';
+    mainImg.src = images[0];
+    mainImg.style.display = 'block';
+
+    if (images.length > 1) {
+      counter.textContent = `1 / ${images.length}`;
+      counter.style.display = 'block';
+
+      images.forEach((src, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'bike-thumb' + (idx === 0 ? ' active' : '');
+        btn.setAttribute('aria-label', `Foto ${idx + 1}`);
+        btn.dataset.src = src;
+        btn.dataset.idx = idx;
+
+        const tImg = document.createElement('img');
+        tImg.src = src;
+        tImg.alt = '';
+        tImg.loading = 'lazy';
+        btn.appendChild(tImg);
+
+        btn.addEventListener('click', () => {
+          mainImg.style.opacity = '0';
+          setTimeout(() => {
+            mainImg.src = src;
+            mainImg.style.opacity = '1';
+          }, 120);
+          card.querySelectorAll('.bike-thumb').forEach(t => t.classList.remove('active'));
+          btn.classList.add('active');
+          counter.textContent = `${idx + 1} / ${images.length}`;
+        });
+
+        thumbsWrap.appendChild(btn);
+      });
+
+      thumbsWrap.style.display = 'flex';
+    }
+  }
+
+  /* ─────────────────────────────────────────
+     KARTE HTML
+  ───────────────────────────────────────── */
+  function createCard(bike) {
+    const condClass = CONDITION_CLASS[bike.condition] || 'cond-good';
+    const specsHTML = bike.specs.map(s =>
+      `<span class="bike-spec-tag">${s}</span>`
+    ).join('');
+    const contactUrl = `contacts.html?velo=${encodeURIComponent(bike.title + ' ' + bike.year)}`;
+
+    const article = document.createElement('article');
+    article.className = 'bike-card reveal' + (bike.sold ? ' sold' : '');
+    article.dataset.id = bike.id;
+
+    article.innerHTML = `
+      <div class="bike-gallery">
+        <div class="bike-gallery-main">
+          <img class="bike-main-img" src="" alt="${bike.title}" loading="lazy" style="display:none">
+          <div class="bike-no-photo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <circle cx="12" cy="12" r="3"/>
+              <line x1="12" y1="3" x2="12" y2="9"/>
+              <line x1="12" y1="15" x2="12" y2="21"/>
+              <line x1="3" y1="12" x2="9" y2="12"/>
+              <line x1="15" y1="12" x2="21" y2="12"/>
+            </svg>
+            <span>Foto tiks pievienoti drīzumā</span>
+          </div>
+          <span class="bike-photo-count" style="display:none"></span>
+        </div>
+        <div class="bike-thumbs" style="display:none"></div>
+      </div>
+      <div class="bike-info">
+        <div class="bike-header">
+          <h3 class="bike-title">${bike.title}</h3>
+          <div class="bike-price">€&thinsp;${bike.price}</div>
+        </div>
+        <div class="bike-meta">
+          <span>${bike.year}</span>
+          <span>${bike.category}</span>
+          <span class="bike-condition ${condClass}">${bike.condition}</span>
+        </div>
+        <p class="bike-desc">${bike.description}</p>
+        <div class="bike-specs">${specsHTML}</div>
+        ${bike.sold
+          ? `<div class="bike-sold-badge">Pārdots</div>`
+          : `<a href="${contactUrl}" class="btn btn-primary">Interesē mani <i class="icon ion-md-arrow-forward"></i></a>`
+        }
+      </div>
+      ${bike.sold ? '<div class="bike-sold-overlay">PĀRDOTS</div>' : ''}
+    `;
+
+    return article;
+  }
+
+  /* ─────────────────────────────────────────
+     GALVENAIS — RENDER
+  ───────────────────────────────────────── */
+  const container  = document.getElementById('bikes-container');
+  const countTitle = document.getElementById('bikes-count-title');
+
+  const visibleBikes = BIKES.filter(b => b.active);
+
+  // Aktivie velo pirmie, pārdotie beigās
+  const sorted = [
+    ...visibleBikes.filter(b => !b.sold),
+    ...visibleBikes.filter(b => b.sold)
+  ];
+
+  container.innerHTML = '';
+
+  if (!sorted.length) {
+    // Nav aktīvu velo — rāda "coming soon" stāvokli
+    container.innerHTML = `
+      <div class="bikes-empty">
+        <svg class="bikes-empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/>
+          <line x1="12" y1="3" x2="12" y2="9"/>
+          <line x1="12" y1="15" x2="12" y2="21"/>
+          <line x1="3" y1="12" x2="9" y2="12"/>
+          <line x1="15" y1="12" x2="21" y2="12"/>
+        </svg>
+        <p class="bikes-empty-title">Drīzumā pieejams</p>
+        <p class="bikes-empty-sub">Šobrīd gatavojam jaunu lietoto velo piedāvājumu.<br>Sekojiet mums vai sazinieties tieši.</p>
+        <a href="contacts.html" class="btn btn-ghost" style="margin-top:1.5rem">Sazināties</a>
+      </div>
+    `;
+    if (countTitle) countTitle.textContent = 'Drīzumā';
+    return;
+  }
+
+  const availableCount = sorted.filter(b => !b.sold).length;
+  if (countTitle) {
+    countTitle.textContent = availableCount
+      ? `${availableCount} pieejami`
+      : 'Velosipēdi';
+  }
+
+  // Renderē kartes un async ielādē attēlus
+  sorted.forEach(bike => {
+    const card = createCard(bike);
+    container.appendChild(card);
+
+    // Scroll reveal (ja observer ir inicializēts vēlāk)
+    requestAnimationFrame(() => {
+      if (typeof IntersectionObserver !== 'undefined') {
+        const obs = new IntersectionObserver(
+          entries => {
+            entries.forEach(e => {
+              if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                obs.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.08 }
+        );
+        obs.observe(card);
+      } else {
+        card.classList.add('visible');
+      }
+    });
+
+    // Attēlu atklāšana — async, neblokē rendering
+    discoverImages(bike.id).then(images => {
+      buildGallery(card, images);
+    });
+  });
+
+})();
+</script>

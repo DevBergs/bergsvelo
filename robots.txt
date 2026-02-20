@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Servera faili — nav publiski
+Disallow: /php/
+Disallow: /scss/
+Disallow: /src/
+
+# Neoptimizētie addon faili
+Disallow: /js/addons/
+Disallow: /css/addons/
+
+# Vecās / neaktīvās lapas
+Disallow: /lietoti.html
+Disallow: /exclusive-templates/
+
+Sitemap: https://bergsvelo.lv/sitemap.xml

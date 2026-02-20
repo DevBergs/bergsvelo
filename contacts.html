@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Piesakies BergsVelo veloservisam — Ozolnieki, Jelgavas novads. Savākšana un piegāde bez papildu maksas. Atbildam tajā pašā dienā." />
+    <meta name="keywords" content="piesakīties servisam Ozolnieki, velo remonts pieraksts, bergsvelo kontakti, veloserviss Jelgava kontakts" />
+    <meta name="robots" content="index, follow" />
+    <title>Piesakies Servisam — BergsVelo Ozolnieki | Kontakti</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bergsvelo.lv/contacts.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bergsvelo.lv/contacts.html" />
+    <meta property="og:title" content="Piesakies Servisam — BergsVelo Ozolnieki" />
+    <meta property="og:description" content="Piesakies BergsVelo veloservisam. Savākšana un piegāde bez papildu maksas. Atbildam tajā pašā dienā." />
+    <meta property="og:image" content="https://bergsvelo.lv/images/van1.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="lv_LV" />
+    <meta property="og:site_name" content="BergsVelo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Piesakies Servisam — BergsVelo" />
+    <meta name="twitter:description" content="Savākšana un piegāde bez papildu maksas. Atbildam tajā pašā dienā." />
+    <meta name="twitter:image" content="https://bergsvelo.lv/images/van1.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/ozo velo.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "https://bergsvelo.lv/" },
+            { "@type": "ListItem", "position": 2, "name": "Kontakti", "item": "https://bergsvelo.lv/contacts.html" }
+          ]
+        },
+        {
+          "@type": "ContactPage",
+          "name": "BergsVelo — Kontakti un pieraksts",
+          "description": "Piesakies veloservisam Ozolniekos. Savākšana un piegāde bez papildu maksas.",
+          "url": "https://bergsvelo.lv/contacts.html",
+          "mainEntity": { "@id": "https://bergsvelo.lv/#business" }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- JS -->
+    <script src="./js/app.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+  </head>
+  <body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header scrolled" id="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+          </a>
+
+          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-menu" id="nav-menu" role="list">
+            <li><a href="index.html" class="nav-link">Sākums</a></li>
+            <li><a href="workshop.html" class="nav-link">Serviss</a></li>
+            <li><a href="shop.html" class="nav-link">Veikals</a></li>
+            <li><a href="contacts.html" class="nav-link nav-cta active">Piesakies</a></li>
+          </ul>
+
+          <a href="shop.html" class="nav-cart" id="nav-cart" aria-label="Grozs">
+            <i class="icon ion-md-cart"></i>
+            <span class="cart-badge" id="cart-badge"></span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ==================== PAGE HERO ==================== -->
+      <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('./images/van1.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+          <div class="page-hero-content reveal">
+            <span class="page-hero-eyebrow">Sazināties</span>
+            <h1 class="page-hero-title">
+              Piesakies<br /><span class="accent">Servisam</span>
+            </h1>
+            <p class="page-hero-desc">
+              Rakstiet mums, norādot savu adresi un servisa veidu — par pārējo parūpēsimies mēs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT SECTION ==================== -->
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-grid">
+
+            <!-- FORM -->
+            <div class="reveal">
+              <h2 class="contact-form-title">Nosūtiet ziņu</h2>
+              <p class="contact-form-desc">
+                Piesakot velo servisu, norādiet saņemšanas un nodošanas vietu,
+                vēlamo laiku un servisa veidu. Atbildēsim pēc iespējas drīzāk.
+              </p>
+
+              <form
+                id="contact-form"
+                name="contact-form"
+                action="/php/mail.php"
+                method="POST"
+                novalidate
+              >
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Vārds</label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Jānis Bērziņš"
+                      autocomplete="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">E-pasts</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="janis@example.lv"
+                      autocomplete="email"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Telefons (neobligāti)</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+371 2X XXX XXX"
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Servisa veids</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Piem. bremžu regulēšana, pilnā apkope..."
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Papildu informācija</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Adrese, vēlamais laiks vai cita svarīga informācija..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg">
+                  Nosūtīt ziņu
+                  <i class="icon ion-md-send"></i>
+                </button>
+
+                <div class="form-status" id="form-status" aria-live="polite"></div>
+
+              </form>
+            </div>
+
+            <!-- INFO CARD -->
+            <div class="reveal" style="transition-delay: 0.15s">
+              <div class="contact-info-card">
+                <h3 class="contact-info-card-title">Kontaktinformācija</h3>
+                <p class="contact-info-card-sub">
+                  Strādājam Ozolniekos un tuvākajā apkārtnē. Zvaniet vai rakstiet — atbildēsim ātri.
+                </p>
+
+                <div class="contact-info-items">
+
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="icon ion-md-pin"></i>
+                    </div>
+                    <div>
+                      <div class="contact-info-label">Adrese</div>
+                      <div class="contact-info-value">Ozolnieki, Jelgavas novads,<br />Latvija</div>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="icon ion-md-call"></i>
+                    </div>
+                    <div>
+                      <div class="contact-info-label">Telefons</div>
+                      <div class="contact-info-value">
+                        <a href="tel:+37126533400" style="color: inherit;">+371 265 33 400</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="icon ion-md-mail"></i>
+                    </div>
+                    <div>
+                      <div class="contact-info-label">E-pasts</div>
+                      <div class="contact-info-value">
+                        <a href="mailto:info@bergsvelo.lv" style="color: inherit;">info@bergsvelo.lv</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="icon ion-md-car"></i>
+                    </div>
+                    <div>
+                      <div class="contact-info-label">Savākšana</div>
+                      <div class="contact-info-value">Brīva savākšana un piegāde — bez papildu maksas</div>
+                    </div>
+                  </div>
+
+                  <div class="contact-info-item">
+                    <div class="contact-info-icon">
+                      <i class="icon ion-md-time"></i>
+                    </div>
+                    <div>
+                      <div class="contact-info-label">Darba laiks</div>
+                      <div class="contact-info-value">Pēc iepriekšēja pieraksta</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-col">
+            <a href="index.html" class="nav-logo footer-brand-logo">
+              <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+            </a>
+            <p class="footer-tagline">
+              Vietējais veloserviss Ozolniekos.<br />
+              Apkope ar savākšanu un piegādi.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navigācija</h4>
+            <ul>
+              <li><a href="index.html">Sākums</a></li>
+              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="shop.html">Veikals</a></li>
+              <li><a href="contacts.html">Kontakti</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Kontakti</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <i class="icon ion-md-pin"></i>
+                Ozolnieki, Latvija
+              </li>
+              <li class="footer-contact-item">
+                <i class="icon ion-md-call"></i>
+                +371 265 33 400
+              </li>
+              <li class="footer-contact-item">
+                <i class="icon ion-md-mail"></i>
+                info@bergsvelo.lv
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
+          <div class="footer-pay-row">
+            <p class="footer-pay-label">Drošie maksājumi</p>
+            <div class="pay-icons">
+              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
+              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
+              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
+              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
+            </div>
+          </div>
+          <div class="footer-legal-links">
+            <a href="privacy.html">Privātuma politika</a>
+            <a href="terms.html">Lietošanas noteikumi</a>
+            <button class="footer-consent-btn" id="open-consent-settings-footer" onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()">Sīkdatņu iestatījumi</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/cookie-consent.js" defer></script>
+  </body>
+</html>

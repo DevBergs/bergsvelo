@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 30" role="img" aria-label="Apple Pay">
+  <rect width="48" height="30" rx="3" fill="#000000"/>
+  <!-- Apple logo simplified -->
+  <g fill="#FFFFFF" transform="translate(7,6)">
+    <path d="M8.5 2.2c.7-.9 1.2-2.1 1-3.2-1 .1-2.2.7-2.9 1.6-.6.8-1.1 2-.9 3.1 1.1.1 2.1-.6 2.8-1.5z"/>
+    <path d="M9.3 3.9c-1.5-.1-2.8.9-3.5.9s-1.8-.8-3-.8C1.2 4.1 0 5.2 0 7c0 2.3 2 5.9 3.5 5.9.7 0 1.3-.5 2.1-.5.8 0 1.3.5 2.1.5 1.5 0 3.5-3.6 3.5-5.9 0-1.6-1.9-3.1-1.9-3.1z"/>
+  </g>
+  <text x="30" y="20" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="600" fill="#FFFFFF" text-anchor="middle">Pay</text>
+</svg>

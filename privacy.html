@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BergsVelo privātuma politika — kā mēs apstrādājam jūsu personas datus saskaņā ar VDAR (GDPR)." />
+    <meta name="robots" content="index, follow" />
+    <title>Privātuma politika — BERGSVELO</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bergsvelo.lv/privacy.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/ozo velo.png" />
+
+    <!-- Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- JS -->
+    <script src="./js/app.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    <script src="./js/cookie-consent.js" defer></script>
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "https://bergsvelo.lv/" },
+        { "@type": "ListItem", "position": 2, "name": "Privātuma politika", "item": "https://bergsvelo.lv/privacy.html" }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header scrolled" id="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+          </a>
+
+          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-menu" id="nav-menu" role="list">
+            <li><a href="index.html" class="nav-link">Sākums</a></li>
+            <li><a href="workshop.html" class="nav-link">Serviss</a></li>
+            <li><a href="shop.html" class="nav-link">Veikals</a></li>
+            <li><a href="contacts.html" class="nav-link nav-cta">Piesakies</a></li>
+          </ul>
+
+          <a href="shop.html" class="nav-cart" id="nav-cart" aria-label="Grozs">
+            <i class="icon ion-md-cart"></i>
+            <span class="cart-badge" id="cart-badge"></span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ==================== PAGE HERO ==================== -->
+      <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('./images/serviss.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+          <div class="page-hero-content reveal">
+            <span class="page-hero-eyebrow">Juridiskā informācija</span>
+            <h1 class="page-hero-title">
+              Privātuma<br /><span class="accent">Politika</span>
+            </h1>
+            <p class="page-hero-desc">
+              Kā mēs apstrādājam jūsu personas datus un kādas tiesības jums ir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PRIVACY CONTENT ==================== -->
+      <section class="privacy-section">
+        <div class="container">
+          <div class="privacy-wrap">
+
+            <div class="privacy-meta">
+              <span>Pēdējo reizi atjaunota: <strong>2026-02-20</strong></span>
+              <span>Versija: <strong>1.0</strong></span>
+              <span>Regulējums: <strong>VDAR (GDPR) · Latvijas FPDAL</strong></span>
+            </div>
+
+            <nav class="privacy-toc" aria-label="Satura rādītājs">
+              <h2>Satura rādītājs</h2>
+              <ol>
+                <li><a href="#parzinis">Datu Pārzinis</a></li>
+                <li><a href="#kadi-dati">Kādi Personas Dati Tiek Apstrādāti</a></li>
+                <li><a href="#juridiskais-pamats">Datu Apstrādes Juridiskais Pamats</a></li>
+                <li><a href="#glabasanas-termini">Datu Glabāšanas Termiņi</a></li>
+                <li><a href="#tresās-puses">Datu Nodošana Trešajām Pusēm</a></li>
+                <li><a href="#aarpus-es">Datu Nodošana Ārpus ES/EEZ</a></li>
+                <li><a href="#jusas-tiesibas">Jūsu Tiesības Pēc VDAR</a></li>
+                <li><a href="#sikdatnes">Sīkdatnes un localStorage</a></li>
+                <li><a href="#drosiba">Drošības Pasākumi</a></li>
+                <li><a href="#nepilngadīgie">Nepilngadīgo Aizsardzība</a></li>
+                <li><a href="#izmainjas">Politikas Izmaiņas</a></li>
+                <li><a href="#sūdzibas">Sūdzības un Uzraudzības Iestāde</a></li>
+              </ol>
+            </nav>
+
+            <!-- ── 1. PĀRZINIS ── -->
+            <h2 id="parzinis">1. Datu Pārzinis</h2>
+            <p>
+              Jūsu personas datu pārzinis (VDAR 4. panta 7. punkta izpratnē) ir:
+            </p>
+            <div class="privacy-infobox">
+              <strong>BergsVelo</strong><br />
+              Uzņēmuma veids: <em>[JĀAIZPILDA — piem. "Individuālais uzņēmums" / "SIA" / "Fiziska persona"]</em><br />
+              Reģistrācijas Nr.: <em>[JĀAIZPILDA]</em><br />
+              Adrese: Ozolnieki, Jelgavas novads, Latvija<br />
+              E-pasts: <a href="mailto:info@bergsvelo.lv">info@bergsvelo.lv</a><br />
+              Tālrunis: <a href="tel:+37126533400">+371 265 33 400</a>
+            </div>
+            <p>
+              Datu aizsardzības speciālists (DAS) nav iecelts, jo to nenosaka VDAR 37. pants
+              (nav liela mēroga sistemātiskas apstrādes). Jautājumus par datu apstrādi adresējiet
+              uz e-pastu <a href="mailto:info@bergsvelo.lv">info@bergsvelo.lv</a>.
+            </p>
+
+            <!-- ── 2. KĀDI DATI ── -->
+            <h2 id="kadi-dati">2. Kādi Personas Dati Tiek Apstrādāti</h2>
+
+            <h3>2.1 Kontaktforma (contacts.html)</h3>
+            <p>Kad aizpildāt pierakstīšanās formu, mēs saņemam:</p>
+            <table class="privacy-table">
+              <thead>
+                <tr><th>Datu kategorija</th><th>Obligāts</th><th>Mērķis</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Vārds, uzvārds</td><td>Jā</td><td>Identificēšana un personalizēta atbilde</td></tr>
+                <tr><td>E-pasta adrese</td><td>Jā</td><td>Saziņa par pasūtījumu</td></tr>
+                <tr><td>Tālruņa numurs</td><td>Nē</td><td>Ātrāka saziņa pēc vēlēšanās</td></tr>
+                <tr><td>Servisa veids</td><td>Jā</td><td>Pakalpojuma nodrošināšana</td></tr>
+                <tr><td>Papildu informācija (adrese, laiks)</td><td>Jā</td><td>Savākšanas organizēšana</td></tr>
+              </tbody>
+            </table>
+            <p>
+              Šie dati tiek nosūtīti uz BergsVelo e-pasta adresi, izmantojot mūsu
+              tīmekļa servera PHP apstrādi. <strong>Tie netiek glabāti datu bāzē.</strong>
+            </p>
+
+            <h3>2.2 Veikals un maksājumu apstrāde</h3>
+
+            <h4>2.2.1 Stripe kā maksājumu pakalpojumu sniedzējs</h4>
+            <p>
+              Maksājumi vietnē tiek apstrādāti, izmantojot ārēju maksājumu pakalpojumu sniedzēju —
+              <strong>Stripe Payments Europe Ltd.</strong> (1 Grand Canal Street Lower, Dublin 2, Īrija).
+              Kad izvēlaties apmaksāt pasūtījumu, jūs tiekat novirzīts uz Stripe hostētu norēķinu lapu.
+            </p>
+            <p>Stripe var darboties:</p>
+            <ul>
+              <li>kā <strong>datu apstrādātājs</strong> (VDAR 28. pants) — apstrādājot maksājuma
+                datus BergsVelo vārdā un saskaņā ar noslēgtu Datu apstrādes līgumu (DPA);</li>
+              <li>kā <strong>neatkarīgs datu pārzinis</strong> — ciktāl tas nepieciešams:
+                krāpšanas novēršanai, normatīvo aktu izpildei, finanšu uzraudzības prasībām un
+                maksājumu drošības nodrošināšanai.</li>
+            </ul>
+
+            <h4>2.2.2 Stripe apstrādātie dati</h4>
+            <p>Stripe var apstrādāt šādus datus:</p>
+            <ul>
+              <li>Maksājumu kartes informāciju (numuru, derīguma termiņu, CVV)</li>
+              <li>Vārdu, uzvārdu</li>
+              <li>E-pasta adresi</li>
+              <li>Norēķinu adresi (ja norādīta)</li>
+              <li>IP adresi un ierīces/pārlūkprogrammas informāciju</li>
+              <li>Transakcijas metadatus</li>
+            </ul>
+            <div class="privacy-infobox">
+              <p><strong>BergsVelo neredz un neglabā</strong> pilnus kartes datus.
+              Maksājumu dati nonāk tieši Stripe PCI DSS Level 1 sertificētajos serveros.</p>
+            </div>
+
+            <h4>2.2.3 Apple Pay un Google Pay</h4>
+            <p>
+              Stripe norēķinu lapā var būt pieejamas digitālo maku maksājumu metodes:
+            </p>
+            <ul>
+              <li><strong>Apple Pay</strong> — Apple Inc., Cupertino, CA, ASV</li>
+              <li><strong>Google Pay</strong> — Google LLC, Mountain View, CA, ASV</li>
+            </ul>
+            <p>
+              Šīs metodes parādās automātiski, ja lietotāja ierīce un pārlūkprogramma
+              tās atbalsta un lietotājs ir konfigurējis attiecīgo digitālo maku.
+              Izvēloties šos risinājumus, maksājuma autentifikācija notiek attiecīgi
+              caur Apple vai Google infrastruktūru saskaņā ar to privātuma politikām.
+              Kartes dati <strong>nekad nesasniedz BergsVelo serverus</strong>.
+            </p>
+
+            <h4>2.2.4 Vietējo banku maksājumi (SEPA un Latvijas bankas)</h4>
+            <p>
+              Atkarībā no konfigurācijas, norēķinu laikā var tikt piedāvāti arī:
+            </p>
+            <ul>
+              <li><strong>SEPA pārskaitījums</strong> — apstrādā Stripe saskaņā ar SEPA noteikumiem</li>
+              <li><strong>Latvijas banku maksājumi</strong> (Swedbank, SEB, Citadele, Luminor) —
+                ja integrēts atsevišķs Baltijas maksājumu vārtejas pakalpojums. Šādos gadījumos
+                bankas darbojas kā <strong>neatkarīgi datu pārziņi</strong> attiecībā uz
+                jūsu bankas konta datiem.</li>
+            </ul>
+            <p>
+              Katra maksājumu metode tiek piedāvāta tikai tad, ja tā ir tehniskai aktīva
+              sistēmā. Faktiskais pieejamo metožu saraksts ir redzams Stripe norēķinu lapā.
+            </p>
+
+            <h4>2.2.5 Maksājumu ikonu attēlošana</h4>
+            <p>
+              Vietnē tiek attēlotas maksājumu metožu vizuālās ikonas (Visa, Mastercard,
+              Apple Pay, Google Pay, Swedbank, SEB, Citadele, Luminor), lai informētu
+              apmeklētājus par pieejamajiem norēķinu veidiem. Šīs ikonas:
+            </p>
+            <ul>
+              <li>tiek glabātas <strong>lokāli</strong> mūsu serveros (SVG formātā);</li>
+              <li><strong>nenodod</strong> lietotāja datus trešajām pusēm;</li>
+              <li>kalpo informatīvam nolūkam un nenozīmē, ka BergsVelo apstrādā
+                attiecīgo pakalpojumu sniedzēju datus.</li>
+            </ul>
+
+            <h3>2.3 Iepirkumu grozs</h3>
+            <p>
+              Jūsu iepirkumu groza saturs tiek glabāts <strong>tikai jūsu ierīcē</strong>
+              (pārlūkprogrammas <code>localStorage</code>). Šie dati <strong>nekad netiek
+              nosūtīti uz mūsu serveriem</strong>, un mums nav piekļuves tiem.
+            </p>
+
+            <h3>2.4 Tīmekļa servera žurnālfaili</h3>
+            <p>
+              Ikviens apmeklējums automātiski ģenerē servera žurnālfailu, kurā var tikt ietverts:
+            </p>
+            <ul>
+              <li>IP adrese</li>
+              <li>Pārlūkprogrammas veids un versija (User-Agent)</li>
+              <li>Pieprasītā lapa (URL)</li>
+              <li>HTTP statusa kods</li>
+              <li>Datums un laiks</li>
+              <li>Nosūtīto datu apjoms</li>
+            </ul>
+            <p>
+              Šos datus apstrādā mūsu hostinga pakalpojumu sniedzējs:
+              <em>[JĀAIZPILDA — hostinga uzņēmuma nosaukums, adrese, valsts]</em>.
+              Serveri atrodas: <em>[JĀAIZPILDA — piem. "Latvijā" / "ES"]</em>.
+            </p>
+
+            <h3>2.5 Trešo pušu resursi (ārējie CDN)</h3>
+            <p>
+              Lai nodrošinātu lapas pareizu darbību un vizuālo izskatu, pārlūkprogramma
+              var pieprasīt resursus no trešo pušu serveriem. Šo pieprasījumu laikā jūsu
+              <strong>IP adrese tiek nosūtīta attiecīgajam resursam</strong>:
+            </p>
+            <table class="privacy-table">
+              <thead>
+                <tr><th>Pakalpojums</th><th>Uzņēmums</th><th>Mērķis</th><th>Dati</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Google Fonts</td>
+                  <td>Google LLC (ASV)</td>
+                  <td>Šriftu ielāde (Bebas Neue, Barlow)</td>
+                  <td>IP adrese, User-Agent</td>
+                </tr>
+                <tr>
+                  <td>Ionicons (unpkg.com)</td>
+                  <td>Cloudflare (ASV)</td>
+                  <td>Ikonu ielāde</td>
+                  <td>IP adrese, User-Agent</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>
+              Šie resursi tiek ielādēti <strong>tikai pēc jūsu piekrišanas</strong>
+              funkcionālo sīkdatņu kategorijai (skat. sīkdatņu iestatījumus). Bez piekrišanas
+              vietne izmanto sistēmas fontus un nepievieno ārējās ikonas.
+            </p>
+
+            <!-- ── 3. JURIDISKAIS PAMATS ── -->
+            <h2 id="juridiskais-pamats">3. Datu Apstrādes Juridiskais Pamats</h2>
+            <table class="privacy-table">
+              <thead>
+                <tr><th>Apstrādes darbība</th><th>VDAR pamats</th><th>Skaidrojums</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kontaktformas datu saņemšana</td>
+                  <td>6(1)(a) Piekrišana</td>
+                  <td>Jūs brīvprātīgi aizpildāt un iesniedzat formu</td>
+                </tr>
+                <tr>
+                  <td>Pakalpojuma sniegšana (servisa pasūtījums)</td>
+                  <td>6(1)(b) Līguma izpilde</td>
+                  <td>Dati nepieciešami, lai izpildītu jūsu pieprasīto pakalpojumu</td>
+                </tr>
+                <tr>
+                  <td>Maksājumu apstrāde (Stripe)</td>
+                  <td>6(1)(b) Līguma izpilde</td>
+                  <td>Nepieciešams preču/pakalpojumu apmaksai</td>
+                </tr>
+                <tr>
+                  <td>Servera žurnālfaili</td>
+                  <td>6(1)(f) Leģitīmās intereses</td>
+                  <td>Drošība, kļūdu diagnostika, ļaunprātīgas darbības novēršana</td>
+                </tr>
+                <tr>
+                  <td>Google Fonts, Ionicons CDN</td>
+                  <td>6(1)(a) Piekrišana</td>
+                  <td>Tiek ielādēti tikai pēc funkcionālās piekrišanas</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- ── 4. GLABĀŠANAS TERMIŅI ── -->
+            <h2 id="glabasanas-termini">4. Datu Glabāšanas Termiņi</h2>
+            <table class="privacy-table">
+              <thead>
+                <tr><th>Datu veids</th><th>Glabāšanas termiņš</th><th>Pamatojums</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>E-pasta sarakste (kontaktforma)</td>
+                  <td>2 gadi pēc sarakstes noslēguma</td>
+                  <td>Leģitīmās intereses — strīdu risināšana, pakalpojuma vēsture</td>
+                </tr>
+                <tr>
+                  <td>Maksājumu transakciju dati</td>
+                  <td>5 gadi</td>
+                  <td>Latvijas grāmatvedības normatīvie akti (likums "Par grāmatvedību")</td>
+                </tr>
+                <tr>
+                  <td>Servera žurnālfaili</td>
+                  <td>90 dienas</td>
+                  <td>Drošība un kļūdu diagnostika</td>
+                </tr>
+                <tr>
+                  <td>Iepirkumu grozs (localStorage)</td>
+                  <td>Līdz dzēšanai pārlūkprogrammā</td>
+                  <td>Glabājas tikai jūsu ierīcē</td>
+                </tr>
+                <tr>
+                  <td>Sīkdatņu piekrišana (localStorage)</td>
+                  <td>12 mēneši, tad atkārtoti jāapstiprina</td>
+                  <td>VDAR prasība par periodisku piekrišanas atjaunošanu</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- ── 5. TREŠĀS PUSES ── -->
+            <h2 id="tresās-puses">5. Datu Nodošana Trešajām Pusēm</h2>
+
+            <h3>5.1 Stripe Payments Europe Ltd.</h3>
+            <div class="privacy-infobox">
+              <strong>Loma:</strong> Datu apstrādātājs (VDAR 28. pants) un, daļēji, neatkarīgs pārzinis<br />
+              <strong>Mērķis:</strong> Maksājumu apstrāde, krāpšanas novēršana, normatīvo prasību izpilde<br />
+              <strong>Juridiskā adrese:</strong> 1 Grand Canal Street Lower, Dublin 2, Īrija (ES)<br />
+              <strong>Mātes uzņēmums:</strong> Stripe Inc., 354 Oyster Point Blvd, South San Francisco, CA 94080, ASV<br />
+              <strong>DPA:</strong> Noslēgts Datu apstrādes līgums saskaņā ar VDAR 28. pantu<br />
+              <strong>ES → ASV datu nodošanas mehānisms:</strong> Standarta līguma klauzulas (SCCs) + EU-U.S. Data Privacy Framework<br />
+              <strong>Sertifikācija:</strong> PCI DSS Level 1<br />
+              <strong>Privātuma politika:</strong> <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a>
+            </div>
+
+            <h3>5.2 Apple Inc. (Apple Pay)</h3>
+            <div class="privacy-infobox">
+              <strong>Loma:</strong> Neatkarīgs pārzinis (digitālā maka autentifikācijai)<br />
+              <strong>Mērķis:</strong> Apple Pay maksājumu autentifikācija un apstrāde<br />
+              <strong>Juridiskā adrese:</strong> One Apple Park Way, Cupertino, CA 95014, ASV<br />
+              <strong>Aktivizējas:</strong> Tikai tad, ja lietotājs pats izvēlas Apple Pay norēķinu lapā<br />
+              <strong>ES → ASV datu nodošanas mehānisms:</strong> Standarta līguma klauzulas (SCCs)<br />
+              <strong>Privātuma politika:</strong> <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">apple.com/legal/privacy</a>
+            </div>
+
+            <h3>5.3 Google LLC (Google Pay)</h3>
+            <div class="privacy-infobox">
+              <strong>Loma:</strong> Neatkarīgs pārzinis (digitālā maka autentifikācijai)<br />
+              <strong>Mērķis:</strong> Google Pay maksājumu autentifikācija un apstrāde<br />
+              <strong>Juridiskā adrese:</strong> 1600 Amphitheatre Parkway, Mountain View, CA 94043, ASV<br />
+              <strong>Aktivizējas:</strong> Tikai tad, ja lietotājs pats izvēlas Google Pay norēķinu lapā<br />
+              <strong>ES → ASV datu nodošanas mehānisms:</strong> Standarta līguma klauzulas (SCCs)<br />
+              <strong>Privātuma politika:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+            </div>
+
+            <h3>5.4 Latvijas bankas (Swedbank, SEB, Citadele, Luminor)</h3>
+            <div class="privacy-infobox">
+              <strong>Loma:</strong> Neatkarīgi datu pārziņi attiecībā uz bankas konta datiem<br />
+              <strong>Mērķis:</strong> Bankas pārskaitījuma autentifikācija un izpilde<br />
+              <strong>Aktivizējas:</strong> Tikai tad, ja lietotājs izvēlas konkrētu bankas maksājumu metodi<br />
+              <strong>Datu apstrāde:</strong> Katras bankas privātuma politika ir piemērojama neatkarīgi<br />
+              <strong>Banku kontaktinformācija:</strong> Atrodama attiecīgās bankas tīmekļa vietnē
+            </div>
+            <p>
+              Šīs maksājumu metodes ir pieejamas, ja vietnē ir aktivizēta vietējo banku
+              integrācija. Latvijas banku pārskaitījumu gadījumā lietotājs tiek novirzīts uz
+              attiecīgās bankas autentifikācijas vidi. BergsVelo <strong>nesaņem un neglabā</strong>
+              bankas konta numurus vai autentifikācijas datus.
+            </p>
+
+            <h3>5.5 Google LLC (Google Fonts)</h3>
+            <div class="privacy-infobox">
+              <strong>Loma:</strong> Neatkarīgs pārzinis<br />
+              <strong>Mērķis:</strong> Šriftu piegāde<br />
+              <strong>Juridiskā adrese:</strong> 1600 Amphitheatre Parkway, Mountain View, CA 94043, ASV<br />
+              <strong>ES datu nodošanas mehānisms:</strong> Standarta līguma klauzulas (SCCs)<br />
+              <strong>Privātuma politika:</strong> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>
+            </div>
+            <p>
+              <strong>Ielādēts tikai pēc jūsu funkcionālās piekrišanas.</strong>
+            </p>
+
+            <h3>5.6 Cloudflare / unpkg.com (Ionicons)</h3>
+            <div class="privacy-infobox">
+              <strong>Loma:</strong> Neatkarīgs pārzinis<br />
+              <strong>Mērķis:</strong> Ikonu failu piegāde<br />
+              <strong>ES datu nodošanas mehānisms:</strong> Standarta līguma klauzulas (SCCs)<br />
+              <strong>Privātuma politika:</strong> <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">cloudflare.com/privacypolicy</a>
+            </div>
+            <p>
+              <strong>Ielādēts tikai pēc jūsu funkcionālās piekrišanas.</strong>
+            </p>
+
+            <h3>5.7 E-pasta pakalpojumu sniedzējs</h3>
+            <p>
+              Kontaktformas iesniegtie dati tiek pārsūtīti uz e-pasta serveri, ko pārvalda:
+              <em>[JĀAIZPILDA — hostinga uzņēmums / e-pasta serveris]</em>.
+            </p>
+
+            <p>
+              <strong>Nekādiem citiem uzņēmumiem dati netiek nodoti</strong>, izņemot gadījumus,
+              kad to nosaka Latvijas vai ES likumdevējs (piem., tiesībsargājošo iestāžu pieprasījums).
+            </p>
+
+            <!-- ── 6. DATU NODOŠANA ĀRPUS ES ── -->
+            <h2 id="aarpus-es">6. Datu Nodošana Ārpus ES/EEZ</h2>
+            <p>
+              Šādi dati tiek nosūtīti ārpus Eiropas Savienības vai EEZ:
+            </p>
+            <table class="privacy-table">
+              <thead>
+                <tr><th>Saņēmējs</th><th>Valsts</th><th>Nosūtītie dati</th><th>Aizsardzības mehānisms</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Google LLC<br/><small>(Google Fonts)</small></td>
+                  <td>ASV</td>
+                  <td>IP adrese, User-Agent</td>
+                  <td>SCCs · Tikai pēc funkcionālās piekrišanas</td>
+                </tr>
+                <tr>
+                  <td>Stripe Inc.<br/><small>(maksājumu apstrāde)</small></td>
+                  <td>ASV</td>
+                  <td>Maksājumu dati, vārds, e-pasts, IP, ierīces dati</td>
+                  <td>SCCs + Stripe DPA + EU-U.S. Data Privacy Framework</td>
+                </tr>
+                <tr>
+                  <td>Cloudflare Inc.<br/><small>(Ionicons CDN)</small></td>
+                  <td>ASV</td>
+                  <td>IP adrese, User-Agent</td>
+                  <td>SCCs · Tikai pēc funkcionālās piekrišanas</td>
+                </tr>
+                <tr>
+                  <td>Apple Inc.<br/><small>(Apple Pay)</small></td>
+                  <td>ASV</td>
+                  <td>Digitālā maka autentifikācijas dati</td>
+                  <td>SCCs · Tikai ja lietotājs izvēlas Apple Pay</td>
+                </tr>
+                <tr>
+                  <td>Google LLC<br/><small>(Google Pay)</small></td>
+                  <td>ASV</td>
+                  <td>Digitālā maka autentifikācijas dati</td>
+                  <td>SCCs · Tikai ja lietotājs izvēlas Google Pay</td>
+                </tr>
+                <tr>
+                  <td>Latvijas bankas<br/><small>(Swedbank, SEB, Citadele, Luminor)</small></td>
+                  <td>ES/EEZ</td>
+                  <td>Bankas autentifikācijas dati (pie bankas pāradresācijas)</td>
+                  <td>Nav nepieciešams — ES ietvaros. Neatkarīgi pārziņi.</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- ── 7. JŪSU TIESĪBAS ── -->
+            <h2 id="jusas-tiesibas">7. Jūsu Tiesības Pēc VDAR</h2>
+            <p>Jums ir šādas tiesības attiecībā uz jūsu personas datiem:</p>
+
+            <div class="privacy-rights-grid">
+              <div class="privacy-right">
+                <i class="icon ion-md-eye"></i>
+                <h4>Piekļuve (15. pants)</h4>
+                <p>Jūs varat pieprasīt apliecinājumu, vai mēs apstrādājam jūsu datus, un saņemt apstrādāto datu kopiju.</p>
+              </div>
+              <div class="privacy-right">
+                <i class="icon ion-md-create"></i>
+                <h4>Labošana (16. pants)</h4>
+                <p>Jūs varat pieprasīt neprecīzu vai nepilnīgu datu labošanu.</p>
+              </div>
+              <div class="privacy-right">
+                <i class="icon ion-md-trash"></i>
+                <h4>Dzēšana (17. pants)</h4>
+                <p>"Tiesības būt aizmirstam" — dzēst datus, ja nav juridiska pamata turpmākai apstrādei.</p>
+              </div>
+              <div class="privacy-right">
+                <i class="icon ion-md-pause"></i>
+                <h4>Ierobežošana (18. pants)</h4>
+                <p>Jūs varat pieprasīt apstrādes ierobežošanu konkrētos apstākļos (piem., apstrīdot precizitāti).</p>
+              </div>
+              <div class="privacy-right">
+                <i class="icon ion-md-move"></i>
+                <h4>Pārnesamība (20. pants)</h4>
+                <p>Jūs varat saņemt savus datus strukturētā, mašīnlasāmā formātā un nodot citam pārzinim.</p>
+              </div>
+              <div class="privacy-right">
+                <i class="icon ion-md-hand"></i>
+                <h4>Iebildums (21. pants)</h4>
+                <p>Jūs varat iebilst pret datu apstrādi leģitīmo interešu pamata gadījumā.</p>
+              </div>
+              <div class="privacy-right">
+                <i class="icon ion-md-undo"></i>
+                <h4>Piekrišanas atsaukums</h4>
+                <p>Jūs varat jebkurā laikā atsaukt iepriekš sniegto piekrišanu. Tas neietekmē iepriekšējo apstrādi.</p>
+              </div>
+              <div class="privacy-right">
+                <i class="icon ion-md-alert"></i>
+                <h4>Sūdzība uzraudzības iestādei</h4>
+                <p>Jūs varat iesniegt sūdzību Datu valsts inspekcijai, ja uzskatāt, ka jūsu tiesības tiek pārkāptas.</p>
+              </div>
+            </div>
+
+            <p>
+              Lai īstenotu savas tiesības, rakstiet uz
+              <a href="mailto:info@bergsvelo.lv">info@bergsvelo.lv</a>.
+              Atbildēsim 30 dienu laikā (VDAR 12. pants).
+            </p>
+
+            <!-- ── 8. SĪKDATNES ── -->
+            <h2 id="sikdatnes">8. Sīkdatnes un Vietējā Glabātuve</h2>
+
+            <p>
+              Mūsu vietne pati par sevi <strong>neizmanto sīkdatnes</strong> (cookies).
+              Mēs izmantojam pārlūkprogrammas <code>localStorage</code> — tā ir klienta puses
+              glabātuve, kas paliek jūsu ierīcē un nekad netiek automātiski nosūtīta serverim.
+            </p>
+
+            <h3>localStorage ieraksti</h3>
+            <table class="privacy-table">
+              <thead>
+                <tr><th>Atslēga</th><th>Saturs</th><th>Termiņš</th><th>Kategorija</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>bergsvelo_cart</code></td>
+                  <td>Iepirkumu groza preces (ID, nosaukums, cena, daudzums)</td>
+                  <td>Līdz dzēšanai pārlūkprogrammā</td>
+                  <td>Obligāts</td>
+                </tr>
+                <tr>
+                  <td><code>bergsvelo_consent</code></td>
+                  <td>Sīkdatņu piekrišanas iestatījumi (JSON)</td>
+                  <td>12 mēneši</td>
+                  <td>Obligāts (piekrišanas pārvaldība)</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <h3>Trešo pušu sīkdatnes</h3>
+            <p>
+              <strong>Google Fonts un Ionicons CDN</strong> var iestatīt savas sīkdatnes,
+              kad to resursi tiek ielādēti. Šīs sīkdatnes ir trešo pušu atbildībā.
+              Detaļas skat. attiecīgo pakalpojumu privātuma politikās.
+              Šie resursi tiek ielādēti <strong>tikai pēc jūsu piekrišanas</strong>.
+            </p>
+
+            <p>
+              <strong>Stripe</strong> var iestatīt sīkdatnes, kad jūs tiekat novirzīts
+              uz apmaksas lapu. Skat. <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe privātuma politiku</a>.
+            </p>
+
+            <div class="privacy-cookie-btn-wrap">
+              <button id="open-consent-settings" class="btn btn-ghost">
+                <i class="icon ion-md-settings"></i> Mainīt sīkdatņu iestatījumus
+              </button>
+            </div>
+
+            <!-- ── 9. DROŠĪBA ── -->
+            <h2 id="drosiba">9. Drošības Pasākumi</h2>
+            <p>Mēs īstenojam šādus tehniskos un organizatoriskos pasākumus:</p>
+            <ul>
+              <li><strong>HTTPS/TLS šifrēšana</strong> — visa saziņa starp jūsu pārlūkprogrammu un mūsu serveri ir šifrēta</li>
+              <li><strong>Kartes datu nešifrēšana pie mums</strong> — maksājumu dati tieši nonāk Stripe drošajos serveros (PCI DSS Level 1)</li>
+              <li><strong>Ierobežota piekļuve</strong> — kontaktformas e-pasti pieejami tikai BergsVelo atbildīgajam darbiniekam</li>
+              <li><strong>Programmatūras atjauninājumi</strong> — hostinga programmatūra tiek regulāri atjaunināta</li>
+              <li><strong>Žurnālfailu aizsardzība</strong> — servera žurnāli nav publiski pieejami</li>
+            </ul>
+            <p>
+              Nekāda datu pārraides sistēma nav 100% droša. Gadījumā, ja notiks datu aizsardzības
+              pārkāpums, mēs rīkosimies saskaņā ar VDAR 33. un 34. pantu.
+            </p>
+
+            <!-- ── 10. BĒRNI ── -->
+            <h2 id="nepilngadīgie">10. Nepilngadīgie</h2>
+            <p>
+              Mūsu pakalpojumi nav paredzēti personām, kuras ir jaunākas par 16 gadiem.
+              Mēs apzināti nevācam personas datus no nepilngadīgajiem. Ja uzzinām, ka
+              esam saņēmuši šādus datus, tos dzēsīsim nekavējoties.
+            </p>
+
+            <!-- ── 11. IZMAIŅAS ── -->
+            <h2 id="izmainas">11. Izmaiņas Privātuma Politikā</h2>
+            <p>
+              Mēs paturam tiesības šo privātuma politiku atjaunināt. Par būtiskām izmaiņām
+              paziņosim, ievietojot paziņojumu vietnē vai nosūtot e-pastu klientiem, kuri
+              devuši atbilstošu piekrišanu. Politikas augšā redzams pēdējās atjaunināšanas datums.
+            </p>
+
+            <!-- ── 12. SŪDZĪBAS ── -->
+            <h2 id="sudzibas">12. Sūdzību Iesniegšana</h2>
+            <p>
+              Ja uzskatāt, ka jūsu datu apstrāde pārkāpj VDAR vai Latvijas tiesību aktus,
+              jums ir tiesības iesniegt sūdzību uzraudzības iestādei:
+            </p>
+            <div class="privacy-infobox">
+              <strong>Datu valsts inspekcija (DVI)</strong><br />
+              Adrese: Blaumaņa iela 11/13-11, Rīga, LV-1011<br />
+              E-pasts: <a href="mailto:pasts@dvi.gov.lv">pasts@dvi.gov.lv</a><br />
+              Tālrunis: +371 67223131<br />
+              Mājaslapa: <a href="https://www.dvi.gov.lv" target="_blank" rel="noopener">www.dvi.gov.lv</a>
+            </div>
+            <p>
+              Pirms vērsieties DVI, aicinām sazināties ar mums —
+              <a href="mailto:info@bergsvelo.lv">info@bergsvelo.lv</a> —
+              lai rastu risinājumu tiešā ceļā.
+            </p>
+
+          </div><!-- /privacy-wrap -->
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-col">
+            <a href="index.html" class="nav-logo footer-brand-logo">
+              <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+            </a>
+            <p class="footer-tagline">
+              Vietējais veloserviss Ozolniekos.<br />
+              Apkope ar savākšanu un piegādi.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navigācija</h4>
+            <ul>
+              <li><a href="index.html">Sākums</a></li>
+              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="shop.html">Veikals</a></li>
+              <li><a href="contacts.html">Kontakti</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Kontakti</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <i class="icon ion-md-pin"></i>
+                Ozolnieki, Latvija
+              </li>
+              <li class="footer-contact-item">
+                <i class="icon ion-md-call"></i>
+                +371 265 33 400
+              </li>
+              <li class="footer-contact-item">
+                <i class="icon ion-md-mail"></i>
+                info@bergsvelo.lv
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
+          <div class="footer-pay-row">
+            <p class="footer-pay-label">Drošie maksājumi</p>
+            <div class="pay-icons">
+              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
+              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
+              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
+              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
+            </div>
+          </div>
+          <div class="footer-legal-links">
+            <a href="privacy.html" class="active">Privātuma politika</a>
+            <a href="terms.html">Lietošanas noteikumi</a>
+            <button id="open-consent-settings-footer" class="footer-consent-btn">Sīkdatņu iestatījumi</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>

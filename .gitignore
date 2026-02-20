@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment / secrets
+.env
+*.env.local
+config.local.php
+
+# Logs
+*.log
+error_log
+
+# Node (if ever used)
+node_modules/

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="lv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pilns veloservisa cenu saraksts — BergsVelo Ozolnieki. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope. Savākšana un piegāde bez papildu maksas." />
+    <meta name="keywords" content="velo apkope cenas Ozolnieki, bremžu regulēšana velosipēdam, ķēdes maiņa, riteņu centrēšana, pilnā apkope, bergsvelo" />
+    <meta name="robots" content="index, follow" />
+    <title>Serviss &amp; Cenas — Velo Apkope Ozolnieki | BERGSVELO</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://bergsvelo.lv/workshop.html" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bergsvelo.lv/workshop.html" />
+    <meta property="og:title" content="Serviss &amp; Cenas — Velo Apkope Ozolnieki | BERGSVELO" />
+    <meta property="og:description" content="Pilns veloservisa cenu saraksts. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope. Savākšana un piegāde bez papildu maksas." />
+    <meta property="og:image" content="https://bergsvelo.lv/images/close-up-working-bike.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="lv_LV" />
+    <meta property="og:site_name" content="BergsVelo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Serviss &amp; Cenas — BergsVelo" />
+    <meta name="twitter:description" content="Pilns veloservisa cenu saraksts. Bremžu regulēšana, ķēdes maiņa, pilnā apkope Ozolniekos." />
+    <meta name="twitter:image" content="https://bergsvelo.lv/images/close-up-working-bike.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/ozo velo.png" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "https://bergsvelo.lv/" },
+            { "@type": "ListItem", "position": 2, "name": "Serviss & Cenas", "item": "https://bergsvelo.lv/workshop.html" }
+          ]
+        },
+        {
+          "@type": "Service",
+          "serviceType": "Bicycle Repair",
+          "name": "BergsVelo Veloserviss",
+          "description": "Pilna spektra velosipēdu apkope un remonts Ozolniekos. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope.",
+          "provider": { "@id": "https://bergsvelo.lv/#business" },
+          "areaServed": [
+            { "@type": "City", "name": "Ozolnieki" },
+            { "@type": "City", "name": "Jelgava" },
+            { "@type": "AdministrativeArea", "name": "Jelgavas novads" }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Servisa pakalpojumi un cenas",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bremžu regulēšana" }, "priceCurrency": "EUR" },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ķēdes maiņa" }, "priceCurrency": "EUR" },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Riteņu centrēšana" }, "priceCurrency": "EUR" },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pilnā apkope" }, "priceCurrency": "EUR" }
+            ]
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- JS -->
+    <script src="./js/app.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+  </head>
+  <body>
+
+    <!-- ==================== HEADER ==================== -->
+    <header class="site-header scrolled" id="site-header">
+      <div class="container">
+        <nav class="nav">
+          <a href="index.html" class="nav-logo">
+            <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+          </a>
+
+          <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-menu" id="nav-menu" role="list">
+            <li><a href="index.html" class="nav-link">Sākums</a></li>
+            <li><a href="workshop.html" class="nav-link active">Serviss</a></li>
+            <li><a href="shop.html" class="nav-link">Veikals</a></li>
+            <li><a href="contacts.html" class="nav-link nav-cta">Piesakies</a></li>
+          </ul>
+
+          <a href="shop.html" class="nav-cart" id="nav-cart" aria-label="Grozs">
+            <i class="icon ion-md-cart"></i>
+            <span class="cart-badge" id="cart-badge"></span>
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- ==================== PAGE HERO ==================== -->
+      <section class="page-hero">
+        <div class="page-hero-bg" style="background-image: url('./images/david-henrichs-7TWyA0UvpVY-unsplash.jpg');"></div>
+        <div class="page-hero-overlay"></div>
+        <div class="container">
+          <div class="page-hero-content reveal">
+            <span class="page-hero-eyebrow">Pakalpojumi</span>
+            <h1 class="page-hero-title">
+              Servisa<br /><span class="accent">Cenrādis</span>
+            </h1>
+            <p class="page-hero-desc">
+              Caurspīdīgas un godīgas cenas par visiem velosipēda apkopes un remonta pakalpojumiem.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PRICING ==================== -->
+      <section class="pricing-section">
+        <div class="container">
+
+          <div class="pricing-intro reveal">
+            <span class="section-label">Cenu saraksts</span>
+            <h2 class="section-title">Pakalpojumi</h2>
+            <p class="section-desc" style="text-align:left; margin-left: 0; margin-right: 0; max-width: 580px;">
+              Cenas norādītas par darbu. Detaļas tiek pieskaitītas papildus atbilstoši to izmaksām.
+              Ja nav skaidrības par nepieciešamo servisu — zvaniet, palīdzēsim noskaidrot!
+            </p>
+          </div>
+
+          <div class="pricing-categories reveal" style="transition-delay: 0.1s">
+
+            <!-- BREMZES — Vispārīgi -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-hand pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Bremzes — vispārīgi</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu remonts / atgaisošana</span>
+                  <span class="pricing-item-price">€ 10–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremzes kluču maiņa</span>
+                  <span class="pricing-item-price">€ 5</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu maiņa</span>
+                  <span class="pricing-item-price">€ 15–25</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremzes diska taisnošana</span>
+                  <span class="pricing-item-price">€ 3</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremzes kluču mazgāšana</span>
+                  <span class="pricing-item-price">€ 5–10</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- V-BREMZES -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-radio-button-off pricing-cat-icon"></i>
+                <span class="pricing-cat-name">V-bremzes</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremzes kluču maiņa</span>
+                  <span class="pricing-item-price">€ 4</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu regulēšana</span>
+                  <span class="pricing-item-price">€ 4–6</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu maiņa</span>
+                  <span class="pricing-item-price">€ 8</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu troses maiņa</span>
+                  <span class="pricing-item-price">€ 5–10</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu rokturu maiņa</span>
+                  <span class="pricing-item-price">€ 5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- DISKU BREMZES -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-disc pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Disku bremzes</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu remonts / atgaisošana</span>
+                  <span class="pricing-item-price">€ 10–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremzes kluču maiņa</span>
+                  <span class="pricing-item-price">€ 5</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremžu maiņa</span>
+                  <span class="pricing-item-price">€ 15–25</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremzes diska taisnošana</span>
+                  <span class="pricing-item-price">€ 3</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bremzes kluču mazgāšana</span>
+                  <span class="pricing-item-price">€ 5–10</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- RATI, RIEPAS, RUMBAS -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-refresh-circle pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Rati, riepas un rumbas</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Riepas / kameras maiņa</span>
+                  <span class="pricing-item-price">€ 4–15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Centrēšana (spieķošana)</span>
+                  <span class="pricing-item-price">€ 5–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Aploces maiņa</span>
+                  <span class="pricing-item-price">€ 15–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Rumbas maiņa</span>
+                  <span class="pricing-item-price">€ 15–20</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PĀRNESUMI -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-settings pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Pārnesumi</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pārslēdzēja / spriegotāja maiņa</span>
+                  <span class="pricing-item-price">€ 15–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pārslēdzēja regulēšana</span>
+                  <span class="pricing-item-price">€ 15–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pārslēdzēja troses maiņa</span>
+                  <span class="pricing-item-price">€ 15–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pārslēdzēja roktura maiņa</span>
+                  <span class="pricing-item-price">€ 20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pārslēdzēja austiņas taisnošana</span>
+                  <span class="pricing-item-price">€ 7–15</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PEDĀĻI, ĶĒDE -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-sync pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Pedāļi un ķēde</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pedāļu centra vītnes atjaunošana</span>
+                  <span class="pricing-item-price">€ 20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pedāļu centra maiņa</span>
+                  <span class="pricing-item-price">€ 20–25</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pedāļa vītnes atjaunošana klanī</span>
+                  <span class="pricing-item-price">€ 20–30</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Klaņa noņemšana</span>
+                  <span class="pricing-item-price">€ 7–15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Pedāļu maiņa</span>
+                  <span class="pricing-item-price">€ 7–15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Ķēdes mazgāšana</span>
+                  <span class="pricing-item-price">€ 7–15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Ķēdes maiņa</span>
+                  <span class="pricing-item-price">€ 15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Kasetes brīvrumbas maiņa</span>
+                  <span class="pricing-item-price">€ 15</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STŪRE, DAKŠA -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-swap pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Stūre un dakša</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Dakšas maiņa</span>
+                  <span class="pricing-item-price">€ 20–45</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Stūres gultņu maiņa / remonts</span>
+                  <span class="pricing-item-price">€ 15–30</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Stūres maiņa</span>
+                  <span class="pricing-item-price">€ 15–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Stūres ragu uzstādīšana</span>
+                  <span class="pricing-item-price">€ 7</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Stūres rokturu uzstādīšana / maiņa</span>
+                  <span class="pricing-item-price">€ 7</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Stūres iznesuma maiņa</span>
+                  <span class="pricing-item-price">€ 7–15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Lentas uztīšana uz stūres</span>
+                  <span class="pricing-item-price">€ 20</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- AKSESUĀRI -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-add-circle pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Aksesuāru uzstādīšana un maiņa</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Sēdekļa / sēdekļa stutes maiņa</span>
+                  <span class="pricing-item-price">€ 10</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Luktura uzstādīšana (ar ģenerātoru)</span>
+                  <span class="pricing-item-price">€ 20–30</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bagāžnieka uzstādīšana</span>
+                  <span class="pricing-item-price">€ 15–20</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Dubļu sargu uzstādīšana</span>
+                  <span class="pricing-item-price">€ 7–40</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Velodatora uzstādīšana</span>
+                  <span class="pricing-item-price">€ 7–15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Palīgritenīšu uzstādīšana</span>
+                  <span class="pricing-item-price">€ 7–15</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Bērnu krēsliņa uzstādīšana</span>
+                  <span class="pricing-item-price">€ 15</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PILNA APKOPE -->
+            <div class="pricing-cat">
+              <div class="pricing-cat-header">
+                <i class="icon ion-md-star pricing-cat-icon"></i>
+                <span class="pricing-cat-name">Velosipēda pilnā apkope *</span>
+              </div>
+              <div class="pricing-rows">
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Ar vienu ātrumu</span>
+                  <span class="pricing-item-price">€ 25–35</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Ar vairākiem ātrumiem (V-bremzes)</span>
+                  <span class="pricing-item-price">€ 35–50</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Ar vairākiem ātrumiem (disku bremzes)</span>
+                  <span class="pricing-item-price">€ 40–60</span>
+                </div>
+                <div class="pricing-row">
+                  <span class="pricing-item-name">Oglekļa rāmis ar disku bremzēm</span>
+                  <span class="pricing-item-price">€ 40–90</span>
+                </div>
+              </div>
+            </div>
+
+          </div><!-- .pricing-categories -->
+
+          <div class="pricing-note reveal" style="transition-delay: 0.2s">
+            <strong>* Pilnā apkope ietver:</strong> eļļošana, regulēšana, skrūvju pārbaude, defektācija, ratu centrēšana.<br />
+            Pirms pilnās apkopes velosipēds tiek mazgāts — par ko tiek piemērota papildus maksa <strong>€ 10–20</strong>.
+          </div>
+
+        </div><!-- .container -->
+      </section>
+
+      <!-- ==================== CTA ==================== -->
+      <section class="section cta-section">
+        <div class="container">
+          <div class="cta-inner reveal">
+            <span class="section-label">Piesakies</span>
+            <h2 class="cta-title">Gatavs sūtīt velosipēdu<br />uz apkopi?</h2>
+            <p class="cta-desc">Sazinieties ar mums — savākšana no jūsu durvīm bez papildus maksas.</p>
+            <a href="contacts.html" class="btn btn-primary btn-lg">
+              Pieteikt servisu
+              <i class="icon ion-md-arrow-forward"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+
+          <div class="footer-col">
+            <a href="index.html" class="nav-logo footer-brand-logo">
+              <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+            </a>
+            <p class="footer-tagline">
+              Vietējais veloserviss Ozolniekos.<br />
+              Apkope ar savākšanu un piegādi.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Navigācija</h4>
+            <ul>
+              <li><a href="index.html">Sākums</a></li>
+              <li><a href="workshop.html">Serviss &amp; Cenas</a></li>
+              <li><a href="index.html#faq">FAQ</a></li>
+              <li><a href="shop.html">Veikals</a></li>
+              <li><a href="contacts.html">Kontakti</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Kontakti</h4>
+            <ul class="footer-contact-list">
+              <li class="footer-contact-item">
+                <i class="icon ion-md-pin"></i>
+                Ozolnieki, Latvija
+              </li>
+              <li class="footer-contact-item">
+                <i class="icon ion-md-call"></i>
+                +371 265 33 400
+              </li>
+              <li class="footer-contact-item">
+                <i class="icon ion-md-mail"></i>
+                info@bergsvelo.lv
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
+          <div class="footer-pay-row">
+            <p class="footer-pay-label">Drošie maksājumi</p>
+            <div class="pay-icons">
+              <span class="pay-icon" title="Visa"><img src="./images/pay/visa.svg" alt="Visa" loading="lazy"></span>
+              <span class="pay-icon" title="Mastercard"><img src="./images/pay/mastercard.svg" alt="Mastercard" loading="lazy"></span>
+              <span class="pay-icon" title="Apple Pay"><img src="./images/pay/apple-pay.svg" alt="Apple Pay" loading="lazy"></span>
+              <span class="pay-icon" title="Google Pay"><img src="./images/pay/google-pay.svg" alt="Google Pay" loading="lazy"></span>
+            </div>
+          </div>
+          <div class="footer-legal-links">
+            <a href="privacy.html">Privātuma politika</a>
+            <a href="terms.html">Lietošanas noteikumi</a>
+            <button class="footer-consent-btn" id="open-consent-settings-footer" onclick="window.BergsVeloConsent && window.BergsVeloConsent.open()">Sīkdatņu iestatījumi</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/cookie-consent.js" defer></script>
+  </body>
+</html>
