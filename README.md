@@ -59,7 +59,7 @@ A fully custom-built website for **BergsVelo** — a bicycle service and second-
 | Page | Description |
 |---|---|
 | `index.html` | Homepage — hero, stats, how it works, about, FAQ, CTA |
-| `workshop.html` | Service & pricing — full price list by category |
+| `workshop.html` | Service & pricing — 11 categories incl. E-bike, suspension, diagnostics |
 | `contacts.html` | Contact form + info card |
 | `shop.html` | Shop — second-hand bikes + maintenance products, cart, checkout |
 | `privacy.html` | Privacy Policy (GDPR Art. 13) |
