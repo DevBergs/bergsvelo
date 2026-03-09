@@ -12,18 +12,18 @@
  */
 
 /* ─── UZŅĒMUMS ───────────────────────────────────────────────── */
-define('SITE_NAME',   'BergsVelo');
+define('SITE_NAME',   'Uzņēmuma Nosaukums');  // ← Aizpildi
 define('SITE_LOCALE', 'lv');
 define('SITE_COUNTRY','LV');
 
 /* ─── DOMĒNS ─────────────────────────────────────────────────── */
-define('SITE_URL',         'https://bergsvelo.lv');         // Bez slīpsvītras beigās
+define('SITE_URL',         'https://jusu-lapa.lv');         // ← Aizpildi, bez slīpsvītras beigās
 define('SITE_SUCCESS_URL', SITE_URL . '/shop.html?success=1');
 define('SITE_CANCEL_URL',  SITE_URL . '/shop.html');
 define('SITE_WEBHOOK_URL', SITE_URL . '/php/bank-webhook.php');
 
 /* ─── KONTAKTU E-PASTS (kontaktforma → mail.php) ────────────── */
-define('MAIL_RECIPIENT', 'info@bergsvelo.lv');  // ← Nomainīt
+define('MAIL_RECIPIENT', 'info@jusu-lapa.lv');  // ← Aizpildi
 define('MAIL_REDIRECT',  SITE_URL . '/contacts.html');
 
 /* ─── STRIPE (kartes maksājumi) ──────────────────────────────── */

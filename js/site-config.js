@@ -23,52 +23,52 @@ const SITE = {
 
   /* ─── 1. UZŅĒMUMS ────────────────────────────────────────── */
   business: {
-    name:          'BergsVelo',       // Pamata nosaukums (parasts)
-    name_spaced:   'Bergs Velo',      // Ar atstarpi (piem. hero titulā)
-    name_upper:    'BERGSVELO',       // Visi lielie (meta title)
-    logo_part1:    'BERGS',           // Logo 1. daļa (nav klase)
-    logo_part2:    'VELO',            // Logo 2. daļa (accent klase)
+    name:          'Uzņēmuma Nosaukums', // Pamata nosaukums (parasts)
+    name_spaced:   'Uzņēmuma Nosaukums', // Ar atstarpi (piem. hero titulā)
+    name_upper:    'UZŅĒMUMS',           // Visi lielie (meta title)
+    logo_part1:    'UZŅĒM',              // Logo 1. daļa (tumšā krāsa)
+    logo_part2:    'UMS',                // Logo 2. daļa (akcents)
     tagline:       'Velosipēdu apkope un remonts',
     description:   'Velosipēdu apkopes un remonta serviss',
     type:          'Veloserviss',
-    founded:       2023,
-    founder:       'Aivis Karlsbergs',
+    founded:       2024,
+    founder:       'Vārds Uzvārds',
     founder_title: 'Velosipēdu mehāniķis',
-    price_range:   '€€',             // JSON-LD priceRange
+    price_range:   '€€',                // JSON-LD priceRange
   },
 
   /* ─── 2. KONTAKTI ────────────────────────────────────────── */
   contact: {
-    phone:          '+37126533400',    // tel: href formāts (bez atstarpēm)
-    phone_display:  '+371 265 33 400', // Rādāmais formāts
-    email:          'info@bergsvelo.lv',
+    phone:          '+371XXXXXXXX',      // tel: href formāts (bez atstarpēm)
+    phone_display:  '+371 XXX XX XX',    // Rādāmais formāts
+    email:          'info@jusu-lapa.lv',
   },
 
   /* ─── 3. JURIDISKIE REKVIZĪTI ────────────────────────────── */
   legal: {
-    company_name:    'BergsVelo',
+    company_name:    'Uzņēmuma Nosaukums',
     company_type:    'Individuālais uzņēmums', // SIA / IU / pašnodarbinātais
-    reg_nr:          'XXXXXXXXX',    // ← Aizpildi
-    vat_nr:          '',             // PVN nr. (tukšs = nav PVN maksātājs)
-    bank:            'Swedbank',
-    iban:            'LVXX HABA XXXX XXXX XXXX X', // ← Aizpildi
-    address_legal:   'Ozolnieki, Jelgavas novads, Latvija',
-    privacy_contact: 'info@bergsvelo.lv',
-    gdpr_date:       '2024-01-01',   // Privātuma politikas spēkā stāšanās
-    mail_recipient:  'info@bergsvelo.lv', // Kontaktformas saņēmējs (mail.php)
+    reg_nr:          'XXXXXXXXX',        // ← Aizpildi
+    vat_nr:          '',                 // PVN nr. (tukšs = nav PVN maksātājs)
+    bank:            'Banka',            // ← Aizpildi
+    iban:            'LVXX XXXX XXXX XXXX XXXX X', // ← Aizpildi
+    address_legal:   'Pilsēta, Novads, Latvija',
+    privacy_contact: 'info@jusu-lapa.lv',
+    gdpr_date:       '2025-01-01',       // Privātuma politikas spēkā stāšanās
+    mail_recipient:  'info@jusu-lapa.lv', // Kontaktformas saņēmējs (mail.php)
   },
 
   /* ─── 4. ATRAŠANĀS VIETA ─────────────────────────────────── */
   location: {
-    city:         'Ozolnieki',
-    region:       'Jelgavas novads',
+    city:         'Pilsēta',
+    region:       'Pilsētas novads',
     country:      'Latvija',
     country_code: 'LV',
-    locale:       'lv_LV',           // OG locale
-    service_area: 'Ozolnieki, Jelgava, Jelgavas novads',
+    locale:       'lv_LV',              // OG locale
+    service_area: 'Pilsēta, Novads',
     geo: {
-      latitude:  56.683,
-      longitude: 23.767,
+      latitude:  0.000,                 // ← Aizpildi
+      longitude: 0.000,                 // ← Aizpildi
     },
   },
 
@@ -179,41 +179,41 @@ const SITE = {
 
   /* ─── 8. DOMĒNS + URL (izmanto PHP failos un SEO) ────────── */
   domain: {
-    url:         'https://bergsvelo.lv',
-    success_url: 'https://bergsvelo.lv/shop.html?success=1',
-    cancel_url:  'https://bergsvelo.lv/shop.html',
-    webhook_url: 'https://bergsvelo.lv/php/bank-webhook.php',
+    url:         'https://jusu-lapa.lv',              // ← Aizpildi
+    success_url: 'https://jusu-lapa.lv/shop.html?success=1',
+    cancel_url:  'https://jusu-lapa.lv/shop.html',
+    webhook_url: 'https://jusu-lapa.lv/php/bank-webhook.php',
   },
 
   /* ─── 9. SEO ──────────────────────────────────────────────── */
   seo: {
     index: {
-      title:       'BERGSVELO — Veloserviss Ozolniekos | Savākšana un Piegāde',
-      description: 'BergsVelo — veloserviss Ozolniekos un Jelgavas novadā. Savākšana, remonts un piegāde no jūsu durvīm. Bremzes, pārnesumi, pilnā apkope.',
-      keywords:    'veloserviss Ozolnieki, veloserviss Jelgava, velosipēda apkope, remonts, mobilais veloserviss, bergsvelo',
+      title:       'UZŅĒMUMS — Veloserviss Pilsētā | Savākšana un Piegāde',
+      description: 'Uzņēmuma Nosaukums — veloserviss Pilsētā. Savākšana, remonts un piegāde no jūsu durvīm. Bremzes, pārnesumi, pilnā apkope.',
+      keywords:    'veloserviss Pilsēta, velosipēda apkope, remonts, mobilais veloserviss',
     },
     workshop: {
-      title:       'Serviss & Cenas — Velo Apkope Ozolnieki | BERGSVELO',
-      description: 'Pilns veloservisa cenu saraksts — BergsVelo Ozolnieki. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope.',
-      keywords:    'velo apkope cenas Ozolnieki, bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, bergsvelo',
+      title:       'Serviss & Cenas — Velo Apkope Pilsētā | UZŅĒMUMS',
+      description: 'Pilns veloservisa cenu saraksts. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope.',
+      keywords:    'velo apkope cenas, bremžu regulēšana, ķēdes maiņa, riteņu centrēšana',
     },
     contacts: {
-      title:       'Kontakti — BergsVelo Veloserviss Ozolnieki',
-      description: 'BergsVelo kontakti — telefons, e-pasts, adrese un rekvizīti. Veloserviss Ozolniekos, Jelgavas novads.',
-      keywords:    'bergsvelo kontakti, veloserviss Ozolnieki kontakts, bergsvelo rekvizīti',
+      title:       'Kontakti — Veloserviss Pilsētā',
+      description: 'Kontakti — telefons, e-pasts, adrese un rekvizīti. Veloserviss Pilsētā.',
+      keywords:    'veloserviss kontakti, adrese, rekvizīti',
     },
     shop: {
-      title:       'Lietoti Velosipēdi & Kopšanas Līdzekļi — BERGSVELO Veikals',
-      description: 'Pērc pārbaudītus lietotos velosipēdus un kopšanas līdzekļus — BergsVelo veikals Ozolniekos.',
-      keywords:    'lietoti velosipēdi Jelgava, lietoti velosipēdi Ozolnieki, bergsvelo veikals',
+      title:       'Lietoti Velosipēdi & Kopšanas Līdzekļi — Veikals',
+      description: 'Pērc pārbaudītus lietotos velosipēdus un kopšanas līdzekļus. Godīgas cenas, pārbaudīta kvalitāte.',
+      keywords:    'lietoti velosipēdi, velo kopšanas līdzekļi, veikals',
     },
     privacy: {
-      title:       'Privātuma politika — BERGSVELO',
-      description: 'BergsVelo privātuma politika — kā mēs apstrādājam jūsu personas datus saskaņā ar VDAR.',
+      title:       'Privātuma politika — UZŅĒMUMS',
+      description: 'Privātuma politika — kā mēs apstrādājam jūsu personas datus saskaņā ar VDAR.',
     },
     terms: {
-      title:       'Lietošanas Noteikumi — BERGSVELO',
-      description: 'BergsVelo lietošanas noteikumi — veikala pirkumu nosacījumi, pakalpojumu kārtība.',
+      title:       'Lietošanas Noteikumi — UZŅĒMUMS',
+      description: 'Lietošanas noteikumi — veikala pirkumu nosacījumi, pakalpojumu kārtība.',
     },
   },
 
