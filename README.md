@@ -1,9 +1,8 @@
-# BergsVelo — Bicycle Service & Shop Website
+# Bike Service Web — Bicycle Service & Shop Website Template
 
-> **Live Demo:** [devbergs.github.io/bergsvelo](https://devbergs.github.io/bergsvelo)
-> **Client website:** [bergsvelo.lv](https://bergsvelo.lv)
+> **Live Demo:** [devbergs.github.io/bike-service-web](https://devbergs.github.io/bike-service-web)
 
-A fully custom-built website for **BergsVelo** — a bicycle service and second-hand shop based in Ozolnieki, Latvia. Designed and developed from scratch with a dark, modern aesthetic.
+A fully custom-built website template for a bicycle service and second-hand shop. Designed and developed from scratch with a dark, modern aesthetic. Ready to adapt to any new client via a single config file.
 
 ---
 
@@ -70,7 +69,7 @@ A fully custom-built website for **BergsVelo** — a bicycle service and second-
 ## Project Structure
 
 ```
-bergsvelo/
+bike-service-web/
 ├── index.html
 ├── workshop.html
 ├── contacts.html
