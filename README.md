@@ -151,4 +151,5 @@ $sandbox           = false;
 
 ## License
 
-MIT © 2026 [DevBergs (Aivis Karlsbergs)](https://github.com/DevBergs)
+© 2026 [DevBergs (Aivis Karlsbergs)](https://github.com/DevBergs) — All Rights Reserved.
+Viewing permitted. Copying, reuse, or distribution without written permission is prohibited.
