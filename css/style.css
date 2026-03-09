@@ -954,6 +954,8 @@ input, textarea, select { font-family: inherit; }
   gap: 1rem;
   padding: 1rem 1.5rem;
   background: var(--clr-dark);
+  cursor: pointer;
+  user-select: none;
 }
 
 .pricing-cat-icon {
@@ -971,7 +973,32 @@ input, textarea, select { font-family: inherit; }
   flex: 1;
 }
 
-.pricing-rows { background: var(--clr-white); }
+.pricing-cat-chevron {
+  color: var(--clr-accent);
+  font-size: 1.1rem;
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+.pricing-cat.open .pricing-cat-chevron {
+  transform: rotate(180deg);
+}
+
+.pricing-rows {
+  background: var(--clr-white);
+  overflow: hidden;
+  max-height: none;
+}
+
+@media (max-width: 768px) {
+  .pricing-rows {
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+  .pricing-cat.open .pricing-rows {
+    max-height: 3000px;
+  }
+}
 
 .pricing-row {
   display: flex;

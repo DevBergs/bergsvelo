@@ -124,4 +124,18 @@
     });
   }
 
+  /* ---------- Pricing accordion (mobile) ---------- */
+  document.querySelectorAll('.pricing-cat-header').forEach(function (header) {
+    /* Add chevron icon */
+    var chevron = document.createElement('span');
+    chevron.className = 'pricing-cat-chevron';
+    chevron.innerHTML = '&#9660;'; /* ▼ */
+    header.appendChild(chevron);
+
+    header.addEventListener('click', function () {
+      if (window.innerWidth > 768) return; /* desktop — always open */
+      header.parentElement.classList.toggle('open');
+    });
+  });
+
 })();
