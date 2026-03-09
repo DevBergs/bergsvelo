@@ -9,11 +9,11 @@
     <title>Kontakti — BergsVelo Veloserviss Ozolnieki</title>
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://bergsvelo.lv/contacts.html" />
+    <link rel="canonical" href="SITE_URL/contacts.html" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bergsvelo.lv/contacts.html" />
+    <meta property="og:url" content="SITE_URL/contacts.html" />
     <meta property="og:title" content="Kontakti — BergsVelo Veloserviss Ozolnieki" />
     <meta property="og:description" content="BergsVelo kontakti, rekvizīti un adrese. Veloserviss Ozolniekos ar savākšanu un piegādi." />
     <meta property="og:image" content="https://bergsvelo.lv/images/van1.jpg" />
@@ -39,16 +39,16 @@
         {
           "@type": "BreadcrumbList",
           "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "https://bergsvelo.lv/" },
-            { "@type": "ListItem", "position": 2, "name": "Kontakti", "item": "https://bergsvelo.lv/contacts.html" }
+            { "@type": "ListItem", "position": 1, "name": "Sākums", "item": "SITE_URL/" },
+            { "@type": "ListItem", "position": 2, "name": "Kontakti", "item": "SITE_URL/contacts.html" }
           ]
         },
         {
           "@type": "ContactPage",
-          "name": "BergsVelo — Kontakti un pieraksts",
-          "description": "Piesakies veloservisam Ozolniekos. Savākšana un piegāde bez papildu maksas.",
-          "url": "https://bergsvelo.lv/contacts.html",
-          "mainEntity": { "@id": "https://bergsvelo.lv/#business" }
+          "name": "SITE_NAME — Kontakti un pieraksts",
+          "description": "Piesakies veloservisam. Savākšana un piegāde bez papildu maksas.",
+          "url": "SITE_URL/contacts.html",
+          "mainEntity": { "@id": "SITE_URL/#business" }
         }
       ]
     }
@@ -192,7 +192,7 @@
                     <div class="contact-info-icon"><i class="icon ion-md-business"></i></div>
                     <div>
                       <div class="contact-info-label">Uzņēmuma nosaukums</div>
-                      <div class="contact-info-value">BergsVelo</div>
+                      <div class="contact-info-value" data-cfg="legal.company_name">BergsVelo</div>
                     </div>
                   </div>
 
@@ -290,7 +290,7 @@
 
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
+          <p>&copy; 2026 <span data-cfg="business.name">BergsVelo</span> Veloserviss. Visas tiesības aizsargātas.</p>
           <div class="footer-pay-row">
             <p class="footer-pay-label">Drošie maksājumi</p>
             <div class="pay-icons">

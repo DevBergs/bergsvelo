@@ -39,30 +39,29 @@
       "@graph": [
         {
           "@type": ["LocalBusiness", "BicycleStore"],
-          "@id": "https://bergsvelo.lv/#business",
-          "name": "BergsVelo",
-          "alternateName": "Bergs Velo",
-          "description": "Velosipēdu apkopes un remonta serviss Ozolniekos. Mobilā savākšana un piegāde bez papildu maksas.",
-          "url": "https://bergsvelo.lv",
-          "logo": "https://bergsvelo.lv/images/ozo velo.png",
-          "image": "https://bergsvelo.lv/images/bike2.jpg",
-          "telephone": "+37126533400",
-          "email": "info@bergsvelo.lv",
+          "@id": "SITE_URL/#business",
+          "name": "SITE_NAME",
+          "alternateName": "SITE_NAME",
+          "description": "Velosipēdu apkopes un remonta serviss. Mobilā savākšana un piegāde bez papildu maksas.",
+          "url": "SITE_URL",
+          "logo": "SITE_URL/images/logo.png",
+          "image": "SITE_URL/images/bike2.jpg",
+          "telephone": "SITE_PHONE",
+          "email": "SITE_EMAIL",
           "address": {
             "@type": "PostalAddress",
-            "addressLocality": "Ozolnieki",
-            "addressRegion": "Jelgavas novads",
+            "addressLocality": "SITE_CITY",
+            "addressRegion": "SITE_REGION",
             "addressCountry": "LV"
           },
           "geo": {
             "@type": "GeoCoordinates",
-            "latitude": 56.683,
-            "longitude": 23.767
+            "latitude": 0,
+            "longitude": 0
           },
           "areaServed": [
-            { "@type": "City", "name": "Ozolnieki" },
-            { "@type": "City", "name": "Jelgava" },
-            { "@type": "AdministrativeArea", "name": "Jelgavas novads" }
+            { "@type": "City", "name": "SITE_CITY" },
+            { "@type": "AdministrativeArea", "name": "SITE_REGION" }
           ],
           "openingHoursSpecification": {
             "@type": "OpeningHoursSpecification",
@@ -84,18 +83,18 @@
           },
           "founder": {
             "@type": "Person",
-            "@id": "https://bergsvelo.lv/#founder",
-            "name": "Aivis Karlsbergs",
+            "@id": "SITE_URL/#founder",
+            "name": "SITE_FOUNDER",
             "jobTitle": "Velosipēdu mehāniķis"
           }
         },
         {
           "@type": "WebSite",
-          "@id": "https://bergsvelo.lv/#website",
-          "url": "https://bergsvelo.lv",
-          "name": "BergsVelo",
-          "description": "Veloserviss Ozolniekos — savākšana, remonts, piegāde",
-          "publisher": { "@id": "https://bergsvelo.lv/#business" },
+          "@id": "SITE_URL/#website",
+          "url": "SITE_URL",
+          "name": "SITE_NAME",
+          "description": "Veloserviss — savākšana, remonts, piegāde",
+          "publisher": { "@id": "SITE_URL/#business" },
           "inLanguage": "lv"
         }
       ]
@@ -226,8 +225,8 @@
             <div class="hero-left">
               <span class="hero-eyebrow reveal"><span data-cfg="location.city">Ozolnieki</span> &nbsp;·&nbsp; <span data-cfg="location.country">Latvija</span></span>
               <h1 class="hero-title reveal" style="transition-delay: 0.1s">
-                <span class="line">BERGS</span>
-                <span class="line accent">VELO</span>
+                <span class="line" data-cfg="business.logo_part1">BERGS</span>
+                <span class="line accent" data-cfg="business.logo_part2">VELO</span>
               </h1>
               <p class="hero-sub reveal" style="transition-delay: 0.2s">
                 Bezmaksas savākšana un piegāde.<br />
@@ -476,7 +475,7 @@
               <span class="logo-mark" data-cfg="business.logo_part1">BERGS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
             </a>
             <p class="footer-tagline">
-              Vietējais veloserviss Ozolniekos.<br />
+              Vietējais veloserviss <span data-cfg="location.city">Ozolniekos</span>.<br />
               Apkope ar savākšanu un piegādi.
             </p>
           </div>
@@ -512,7 +511,7 @@
 
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 BergsVelo Veloserviss. Visas tiesības aizsargātas.</p>
+          <p>&copy; 2026 <span data-cfg="business.name">BergsVelo</span> Veloserviss. Visas tiesības aizsargātas.</p>
           <!-- ── Maksājumu metodes (SVG lokāli hostētas, bez ārējiem pieprasījumiem) ── -->
           <div class="footer-pay-row">
             <p class="footer-pay-label">Drošie maksājumi</p>
