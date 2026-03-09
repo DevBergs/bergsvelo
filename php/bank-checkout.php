@@ -51,11 +51,12 @@ header('X-Frame-Options: DENY');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Cache-Control: no-store, no-cache, must-revalidate');
 
-// ── KONFIGURĀCIJA ─────────────────────────────────────────────
-$montonioAccessKey = 'REPLACE_WITH_MONTONIO_ACCESS_KEY';
-$montonioSecretKey = 'REPLACE_WITH_MONTONIO_SECRET_KEY';
-$baseUrl           = 'https://bergsvelo.lv'; // Bez slīpsvītras beigās
-$sandbox           = true;  // false = ražošanas vide
+// ── KONFIGURĀCIJA (rediģē php/config.php) ─────────────────────
+require_once __DIR__ . '/config.php';
+$montonioAccessKey = MONTONIO_ACCESS_KEY;
+$montonioSecretKey = MONTONIO_SECRET_KEY;
+$baseUrl           = SITE_URL;
+$sandbox           = MONTONIO_SANDBOX;
 
 // Atļautie ASPSP kodi Latvijai
 $allowedAspsp = ['HABALV22', 'UNLALV2X', 'PARXLV22', 'RIKOLV2X'];

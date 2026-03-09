@@ -61,6 +61,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- JS -->
+    <script src="./js/site-config.js" defer></script>
     <script src="./js/app.js" defer></script>
     <script src="./js/cart.js" defer></script>
   </head>
@@ -71,7 +72,7 @@
       <div class="container">
         <nav class="nav">
           <a href="index.html" class="nav-logo">
-            <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+            <span class="logo-mark" data-cfg="business.logo_part1">BERGS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
           </a>
 
           <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
@@ -133,7 +134,7 @@
                     <div class="contact-info-icon"><i class="icon ion-md-pin"></i></div>
                     <div>
                       <div class="contact-info-label">Adrese</div>
-                      <div class="contact-info-value">Ozolnieki, Jelgavas novads,<br />Latvija</div>
+                      <div class="contact-info-value"><span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.region">Jelgavas novads</span>,<br /><span data-cfg="location.country">Latvija</span></div>
                     </div>
                   </div>
 
@@ -142,7 +143,7 @@
                     <div>
                       <div class="contact-info-label">Telefons</div>
                       <div class="contact-info-value">
-                        <a href="tel:+37126533400" style="color:inherit">+371 265 33 400</a>
+                        <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" style="color:inherit">+371 265 33 400</a>
                       </div>
                     </div>
                   </div>
@@ -152,7 +153,7 @@
                     <div>
                       <div class="contact-info-label">E-pasts</div>
                       <div class="contact-info-value">
-                        <a href="mailto:info@bergsvelo.lv" style="color:inherit">info@bergsvelo.lv</a>
+                        <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" style="color:inherit">info@bergsvelo.lv</a>
                       </div>
                     </div>
                   </div>
@@ -207,7 +208,7 @@
                     <div class="contact-info-icon"><i class="icon ion-md-pin"></i></div>
                     <div>
                       <div class="contact-info-label">Juridiskā adrese</div>
-                      <div class="contact-info-value">Ozolnieki, Jelgavas novads,<br />Latvija</div>
+                      <div class="contact-info-value"><span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.region">Jelgavas novads</span>,<br /><span data-cfg="location.country">Latvija</span></div>
                     </div>
                   </div>
 
@@ -215,7 +216,7 @@
                     <div class="contact-info-icon"><i class="icon ion-md-card"></i></div>
                     <div>
                       <div class="contact-info-label">Banka</div>
-                      <div class="contact-info-value">Swedbank<br />IBAN: LVXX HABA XXXX XXXX XXXX X</div>
+                      <div class="contact-info-value"><span data-cfg="legal.bank">Swedbank</span><br />IBAN: <span data-cfg="legal.iban">LVXX HABA XXXX XXXX XXXX X</span></div>
                     </div>
                   </div>
 
@@ -250,7 +251,7 @@
 
           <div class="footer-col">
             <a href="index.html" class="nav-logo footer-brand-logo">
-              <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+              <span class="logo-mark" data-cfg="business.logo_part1">BERGS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
             </a>
             <p class="footer-tagline">
               Vietējais veloserviss Ozolniekos.<br />
@@ -274,15 +275,15 @@
             <ul class="footer-contact-list">
               <li class="footer-contact-item">
                 <i class="icon ion-md-pin"></i>
-                Ozolnieki, Latvija
+                <span data-cfg="location.city">Ozolnieki</span>, <span data-cfg="location.country">Latvija</span>
               </li>
               <li class="footer-contact-item">
                 <i class="icon ion-md-call"></i>
-                +371 265 33 400
+                <a data-cfg-href="contact.phone" href="tel:+37126533400" data-cfg="contact.phone_display" style="color:inherit">+371 265 33 400</a>
               </li>
               <li class="footer-contact-item">
                 <i class="icon ion-md-mail"></i>
-                info@bergsvelo.lv
+                <a data-cfg-href="contact.email" href="mailto:info@bergsvelo.lv" data-cfg="contact.email" style="color:inherit">info@bergsvelo.lv</a>
               </li>
             </ul>
           </div>

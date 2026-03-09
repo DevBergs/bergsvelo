@@ -55,9 +55,10 @@ header('X-Frame-Options: DENY');
 header('Referrer-Policy: strict-origin-when-cross-origin');
 header('Cache-Control: no-store, no-cache, must-revalidate');
 
-// ── KONFIGURĀCIJA ────────────────────────────────────────────
-$stripeSecretKey = 'sk_test_REPLACE_WITH_YOUR_STRIPE_SECRET_KEY';
-$baseUrl         = 'https://bergsvelo.lv'; // Bez slīpsvītras beigās
+// ── KONFIGURĀCIJA (rediģē php/config.php) ────────────────────
+require_once __DIR__ . '/config.php';
+$stripeSecretKey = STRIPE_SECRET_KEY;
+$baseUrl         = SITE_URL;
 
 /**
  * Aktīvās maksājumu metodes.

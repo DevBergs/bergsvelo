@@ -82,6 +82,7 @@
     <link rel="stylesheet" href="./css/style.css" />
 
     <!-- JS -->
+    <script src="./js/site-config.js" defer></script>
     <script src="./js/app.js" defer></script>
     <script src="./js/cart.js" defer></script>
   </head>
@@ -92,7 +93,7 @@
       <div class="container">
         <nav class="nav">
           <a href="index.html" class="nav-logo">
-            <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+            <span class="logo-mark" data-cfg="business.logo_part1">BERGS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
           </a>
 
           <button class="nav-toggle" id="nav-toggle" aria-label="Atvērt izvēlni" aria-expanded="false">
@@ -169,19 +170,19 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Velosipēda pilnā diagnostika</span>
-                  <span class="pricing-item-price">€ 12</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.full">€ 12</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Express apkope (regulēšana + pumpēšana)</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.express">€ 25</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Velosipēda mazgāšana</span>
-                  <span class="pricing-item-price">€ 15</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.wash">€ 15</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Servisa stundu likme</span>
-                  <span class="pricing-item-price">€ 35 / h</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.diagnostics.hourly" data-cfg-suffix="/ h">€ 35 / h</span>
                 </div>
               </div>
             </div>
@@ -195,23 +196,23 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu regulēšana</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.adjust">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremzes kluču maiņa</span>
-                  <span class="pricing-item-price">€ 7</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.pads">€ 7</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu troses maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.cable">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu maiņa</span>
-                  <span class="pricing-item-price">€ 12</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.replace">€ 12</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu rokturu maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.v_brakes.grips">€ 8</span>
                 </div>
               </div>
             </div>
@@ -225,31 +226,31 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu regulēšana</span>
-                  <span class="pricing-item-price">€ 10</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.adjust">€ 10</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Hidraulisko bremžu atgaisošana</span>
-                  <span class="pricing-item-price">€ 30</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.bleed">€ 30</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremzes kluču maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.pads">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu kluču tīrīšana</span>
-                  <span class="pricing-item-price">€ 12</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.clean">€ 12</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu rotora taisnošana</span>
-                  <span class="pricing-item-price">€ 5</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.rotor_true">€ 5</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu rotora maiņa</span>
-                  <span class="pricing-item-price">€ 12</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.rotor_swap">€ 12</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bremžu komplekta maiņa</span>
-                  <span class="pricing-item-price">€ 35</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.disc_brakes.full_kit">€ 35</span>
                 </div>
               </div>
             </div>
@@ -263,27 +264,27 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Riepas / kameras maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.wheels.tube">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Centrēšana (spieķošana)</span>
-                  <span class="pricing-item-price">€ 15</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.wheels.true">€ 15</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Spieķa maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.wheels.spoke">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Aploces maiņa</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.wheels.rim">€ 25</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Riteņa salikšana no jauna</span>
-                  <span class="pricing-item-price">€ 40</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.wheels.build">€ 40</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Rumbas maiņa</span>
-                  <span class="pricing-item-price">€ 30</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.wheels.hub">€ 30</span>
                 </div>
               </div>
             </div>
@@ -297,23 +298,23 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pārslēdzēja regulēšana</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.gears.adjust">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pārslēdzēja troses maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.gears.cable">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pārslēdzēja / spriegotāja maiņa</span>
-                  <span class="pricing-item-price">€ 20</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.gears.derailleur">€ 20</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pārslēdzēja roktura maiņa</span>
-                  <span class="pricing-item-price">€ 18</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.gears.shifter">€ 18</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pārslēdzēja austiņas taisnošana</span>
-                  <span class="pricing-item-price">€ 10</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.gears.hanger">€ 10</span>
                 </div>
               </div>
             </div>
@@ -327,35 +328,35 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Ķēdes mazgāšana</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.chain_clean">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Ķēdes maiņa</span>
-                  <span class="pricing-item-price">€ 10</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.chain_swap">€ 10</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Kasetes / brīvrumbas maiņa</span>
-                  <span class="pricing-item-price">€ 12</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.cassette">€ 12</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pedāļu maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.pedals">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pedāļu centra maiņa</span>
-                  <span class="pricing-item-price">€ 20</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.bb">€ 20</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pedāļu centra vītnes atjaunošana</span>
-                  <span class="pricing-item-price">€ 20</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.bb_rethread">€ 20</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Klaņa noņemšana</span>
-                  <span class="pricing-item-price">€ 10</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.crank_pull">€ 10</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Pedāļa vītnes atjaunošana klanī</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.drivetrain.pedal_thread">€ 25</span>
                 </div>
               </div>
             </div>
@@ -369,31 +370,31 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Stūres gultņu maiņa / remonts</span>
-                  <span class="pricing-item-price">€ 20</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.steering.headset">€ 20</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Stūres maiņa</span>
-                  <span class="pricing-item-price">€ 15</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.steering.stem">€ 15</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Stūres iznesuma maiņa</span>
-                  <span class="pricing-item-price">€ 10</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.steering.stem_swap">€ 10</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Stūres rokturu uzstādīšana / maiņa</span>
-                  <span class="pricing-item-price">€ 7</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.steering.grips">€ 7</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Stūres ragu uzstādīšana</span>
-                  <span class="pricing-item-price">€ 7</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.steering.bar_ends">€ 7</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Lentas uztīšana uz stūres</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.steering.bar_tape">€ 25</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Dakšas maiņa</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.steering.fork">€ 25</span>
                 </div>
               </div>
             </div>
@@ -407,23 +408,23 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Piekarumu regulēšana un iestatīšana</span>
-                  <span class="pricing-item-price">€ 15</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.suspension.adjust">€ 15</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Priekšējās dakšas eļļošana / apkope</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.suspension.lube">€ 25</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Priekšējās dakšas žokļu nomaiņa</span>
-                  <span class="pricing-item-price">€ 30</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.suspension.lowers">€ 30</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Aizmugures amortizatora apkope</span>
-                  <span class="pricing-item-price">€ 40</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.suspension.rear_shock">€ 40</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Amortizatora maiņa</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.suspension.fork_swap">€ 25</span>
                 </div>
               </div>
             </div>
@@ -437,23 +438,23 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Elektrosistēmas diagnostika</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.ebike.diag">€ 25</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Akumulatora diagnostika</span>
-                  <span class="pricing-item-price">€ 20</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.ebike.battery">€ 20</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Programmatūras atjauninājums</span>
-                  <span class="pricing-item-price">€ 30</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.ebike.software">€ 30</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Motora apkope / tīrīšana</span>
-                  <span class="pricing-item-price">€ 30</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.ebike.motor">€ 30</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">E-velo pilnā apkope</span>
-                  <span class="pricing-item-price">€ 65</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.ebike.full">€ 65</span>
                 </div>
               </div>
             </div>
@@ -467,31 +468,31 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Sēdekļa / sēdekļa stutes maiņa</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.accessories.saddle">€ 8</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Velodatora / GPS uzstādīšana</span>
-                  <span class="pricing-item-price">€ 10</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.accessories.computer">€ 10</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bagāžnieka uzstādīšana</span>
-                  <span class="pricing-item-price">€ 15</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.accessories.rack">€ 15</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Dubļu sargu uzstādīšana</span>
-                  <span class="pricing-item-price">€ 15</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.accessories.fender">€ 15</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Luktura uzstādīšana (ar ģenerātoru)</span>
-                  <span class="pricing-item-price">€ 25</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.accessories.light">€ 25</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Bērnu krēsliņa uzstādīšana</span>
-                  <span class="pricing-item-price">€ 12</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.accessories.child_seat">€ 12</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Palīgritenīšu uzstādīšana</span>
-                  <span class="pricing-item-price">€ 8</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.accessories.stabilizers">€ 8</span>
                 </div>
               </div>
             </div>
@@ -505,23 +506,23 @@
               <div class="pricing-rows">
                 <div class="pricing-row">
                   <span class="pricing-item-name">Ar vienu ātrumu</span>
-                  <span class="pricing-item-price">€ 30</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.full_service.single_speed">€ 30</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Ar vairākiem ātrumiem (V-bremzes)</span>
-                  <span class="pricing-item-price">€ 40</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.full_service.v_brake">€ 40</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Ar vairākiem ātrumiem (disku bremzes)</span>
-                  <span class="pricing-item-price">€ 50</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.full_service.disc">€ 50</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Oglekļa rāmis ar disku bremzēm</span>
-                  <span class="pricing-item-price">€ 65</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.full_service.carbon">€ 65</span>
                 </div>
                 <div class="pricing-row">
                   <span class="pricing-item-name">Elektrovelosipēds (e-velo)</span>
-                  <span class="pricing-item-price">€ 65</span>
+                  <span class="pricing-item-price" data-cfg-price="prices.full_service.ebike">€ 65</span>
                 </div>
               </div>
             </div>
@@ -704,7 +705,7 @@
 
           <div class="footer-col">
             <a href="index.html" class="nav-logo footer-brand-logo">
-              <span class="logo-mark">BERGS</span><span class="logo-velo">VELO</span>
+              <span class="logo-mark" data-cfg="business.logo_part1">BERGS</span><span class="logo-velo" data-cfg="business.logo_part2">VELO</span>
             </a>
             <p class="footer-tagline">
               Vietējais veloserviss Ozolniekos.<br />
