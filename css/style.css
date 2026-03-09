@@ -427,7 +427,6 @@ input, textarea, select { font-family: inherit; }
   font-size: clamp(4.5rem, 10vw, 9rem);
   line-height: 0.88;
   color: var(--clr-primary);
-  text-transform: uppercase;
   letter-spacing: 0.02em;
   margin-bottom: 1.5rem;
 }
