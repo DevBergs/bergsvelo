@@ -12,7 +12,7 @@
  */
 
 /* ─── UZŅĒMUMS ───────────────────────────────────────────────── */
-define('SITE_NAME',   'Uzņēmuma Nosaukums');  // ← Aizpildi
+define('SITE_NAME',   'TavsVelo');
 define('SITE_LOCALE', 'lv');
 define('SITE_COUNTRY','LV');
 

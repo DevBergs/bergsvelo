@@ -1,4 +1,4 @@
-# BergsVelo — Sociālo Tīklu Publikācijas
+# TavsVelo — Sociālo Tīklu Publikācijas
 
 ---
 
@@ -8,7 +8,7 @@
 
 > **Uzbūvēju pilnīgu veloservisa biznesa mājaslapu no nulles.**
 >
-> BergsVelo ir mobilais velosipēdu serviss Jelgavas novadā — klients pierakstās, viņa velosipēdu savāc, salabo un atgriež mājās. Vienkārša ideja, ko vajadzēja īstenot kā pienākas: ātra, uzticama lapa, kas darbojas arī mobilajā telefonā.
+> TavsVelo ir mobilais velosipēdu serviss Jelgavas novadā — klients pierakstās, viņa velosipēdu savāc, salabo un atgriež mājās. Vienkārša ideja, ko vajadzēja īstenot kā pienākas: ātra, uzticama lapa, kas darbojas arī mobilajā telefonā.
 >
 > **Ko uzbūvēju:**
 >
@@ -42,11 +42,11 @@
 >
 > Viena no lielākajām sāpēm custom mājaslapās: katrs uzņēmuma nosaukums, cena, tālrunis ir izkaisīts pa simtiem HTML rindiņu.
 >
-> Risinājums, ko ieviesu BergsVelo projektā:
+> Risinājums, ko ieviesu TavsVelo projektā:
 >
 > ```js
 > const SITE = {
->   business: { name: 'BergsVelo', phone: '+37126533400' },
+>   business: { name: 'TavsVelo', phone: '+37126533400' },
 >   prices:   { diagnostics: { full: 12 }, wheels: { true: 15 } },
 >   colors:   { primary: '#0F1E3C', accent: '#1B4FD8' }
 > };
@@ -67,7 +67,7 @@
 
 > **Divpusēja maksājumu sistēma vienā veikalā.**
 >
-> BergsVelo veikalā klienti var maksāt divos veidos:
+> TavsVelo veikalā klienti var maksāt divos veidos:
 >
 > 1. **Stripe** — vīza, Mastercard, Apple Pay, Google Pay
 > 2. **Montonio** — Latvijas bankas tieši: Swedbank, SEB, Citadele, Luminor
@@ -99,7 +99,7 @@
 > 🔗 devbergs.github.io/bike-service-web
 >
 > —
-> #bergsvelo #webdesign #frontend #javascript #php #ecommerce #seo #latvija #веб #design #portfolio #devberg
+> #tavsvelo #webdesign #frontend #javascript #php #ecommerce #seo #latvija #веб #design #portfolio #devberg
 
 ---
 
@@ -121,21 +121,21 @@
 
 > No idejas līdz tiešsaistei.
 >
-> BergsVelo — mobilais veloserviss, kas savāc tavu velosipēdu mājās,
+> TavsVelo — mobilais veloserviss, kas savāc tavu velosipēdu mājās,
 > salabo un atgriež. Mēs uzbūvējām visu pārējo.
 >
 > 🔗 devbergs.github.io/bike-service-web
 >
 > —
-> #bergsvelo #webdesign #latvija #velosipēds #devberg #portfolio
+> #tavsvelo #webdesign #latvija #velosipēds #devberg #portfolio
 
 ---
 
 ## FACEBOOK — Post variants
 
-> **Jauns projekts pabeigts — BergsVelo.**
+> **Jauns projekts pabeigts — TavsVelo.**
 >
-> BergsVelo ir mobilais veloserviss Jelgavas novadā. Klients pierakstās → velosipēdu savāc no mājām → salabo → atgriež. Vienkārša un gudra ideja.
+> TavsVelo ir mobilais veloserviss Jelgavas novadā. Klients pierakstās → velosipēdu savāc no mājām → salabo → atgriež. Vienkārša un gudra ideja.
 >
 > Mājaslapu veidojām no nulles:
 >
@@ -148,17 +148,17 @@
 > ✅ JSON-LD struktūrētie dati Google meklētājam
 >
 > Demo: devbergs.github.io/bike-service-web
-> Klients: bergsvelo.lv
+> Klients: tavsvelo.lv
 >
 > Veidots ar: HTML · CSS · Vanilla JavaScript · PHP
 >
-> #BergsVelo #webdesign #ecommerce #latvia #veloserviss
+> #TavsVelo #webdesign #ecommerce #latvia #veloserviss
 
 ---
 
 ## ĪSS APRAKSTS (Bio / About / projekta karte)
 
-> BergsVelo — pielāgota mājaslapa mobilajam veloservisam.
+> TavsVelo — pielāgota mājaslapa mobilajam veloservisam.
 > Sākumlapa · Cenu lapa · Veikals ar Stripe + Montonio maksājumiem.
 > Vanilla JS + PHP · JSON-LD SEO · GDPR.
 > devbergs.github.io/bike-service-web

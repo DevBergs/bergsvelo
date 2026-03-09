@@ -23,11 +23,11 @@ const SITE = {
 
   /* ─── 1. UZŅĒMUMS ────────────────────────────────────────── */
   business: {
-    name:          'Uzņēmuma Nosaukums', // Pamata nosaukums (parasts)
-    name_spaced:   'Uzņēmuma Nosaukums', // Ar atstarpi (piem. hero titulā)
-    name_upper:    'UZŅĒMUMS',           // Visi lielie (meta title)
-    logo_part1:    'UZŅĒM',              // Logo 1. daļa (tumšā krāsa)
-    logo_part2:    'UMS',                // Logo 2. daļa (akcents)
+    name:          'TavsVelo',           // Pamata nosaukums (parasts)
+    name_spaced:   'Tavs Velo',          // Ar atstarpi (piem. hero titulā)
+    name_upper:    'TAVSVELO',           // Visi lielie (meta title)
+    logo_part1:    'TAVS',               // Logo 1. daļa (tumšā krāsa)
+    logo_part2:    'VELO',               // Logo 2. daļa (akcents)
     tagline:       'Velosipēdu apkope un remonts',
     description:   'Velosipēdu apkopes un remonta serviss',
     type:          'Veloserviss',
@@ -46,7 +46,7 @@ const SITE = {
 
   /* ─── 3. JURIDISKIE REKVIZĪTI ────────────────────────────── */
   legal: {
-    company_name:    'Uzņēmuma Nosaukums',
+    company_name:    'TavsVelo',
     company_type:    'Individuālais uzņēmums', // SIA / IU / pašnodarbinātais
     reg_nr:          'XXXXXXXXX',        // ← Aizpildi
     vat_nr:          '',                 // PVN nr. (tukšs = nav PVN maksātājs)
@@ -188,12 +188,12 @@ const SITE = {
   /* ─── 9. SEO ──────────────────────────────────────────────── */
   seo: {
     index: {
-      title:       'UZŅĒMUMS — Veloserviss Pilsētā | Savākšana un Piegāde',
-      description: 'Uzņēmuma Nosaukums — veloserviss Pilsētā. Savākšana, remonts un piegāde no jūsu durvīm. Bremzes, pārnesumi, pilnā apkope.',
+      title:       'TAVSVELO — Veloserviss Pilsētā | Savākšana un Piegāde',
+      description: 'TavsVelo — veloserviss Pilsētā. Savākšana, remonts un piegāde no jūsu durvīm. Bremzes, pārnesumi, pilnā apkope.',
       keywords:    'veloserviss Pilsēta, velosipēda apkope, remonts, mobilais veloserviss',
     },
     workshop: {
-      title:       'Serviss & Cenas — Velo Apkope Pilsētā | UZŅĒMUMS',
+      title:       'Serviss & Cenas — Velo Apkope Pilsētā | TAVSVELO',
       description: 'Pilns veloservisa cenu saraksts. Bremžu regulēšana, ķēdes maiņa, riteņu centrēšana, pilnā apkope.',
       keywords:    'velo apkope cenas, bremžu regulēšana, ķēdes maiņa, riteņu centrēšana',
     },
@@ -208,11 +208,11 @@ const SITE = {
       keywords:    'lietoti velosipēdi, velo kopšanas līdzekļi, veikals',
     },
     privacy: {
-      title:       'Privātuma politika — UZŅĒMUMS',
+      title:       'Privātuma politika — TAVSVELO',
       description: 'Privātuma politika — kā mēs apstrādājam jūsu personas datus saskaņā ar VDAR.',
     },
     terms: {
-      title:       'Lietošanas Noteikumi — UZŅĒMUMS',
+      title:       'Lietošanas Noteikumi — TAVSVELO',
       description: 'Lietošanas noteikumi — veikala pirkumu nosacījumi, pakalpojumu kārtība.',
     },
   },
